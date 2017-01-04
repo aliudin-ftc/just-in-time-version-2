@@ -1,0 +1,568 @@
+/*---------------------------------
+    Colored Header
+----------------------------------*/
+.fg-line:not([class*=has-]):after {
+	background: #dc2430;
+}
+
+[data-ma-header="teal"]:before, 
+[data-ma-header="teal"] #header,
+.palette-Teal.bg {
+	background: url(../img/bg-pattern.png), #7b4397 !important;
+    background: url(../img/bg-pattern.png), -webkit-linear-gradient(to left,#7b4397,#dc2430)  !important;
+    background: url(../img/bg-pattern.png), linear-gradient(to left,#7b4397,#dc2430)  !important;
+}
+
+[data-ma-header="teal"] .smm-alerts > li.active, 
+[data-ma-header="teal"] .main-menu li.active > a {
+	color: #dc2430;
+}
+
+[data-ma-header="teal"] .main-menu li.active > a span {
+	background: -webkit-linear-gradient(to left,#7b4397,#dc2430);
+    background: linear-gradient(to left,#7b4397,#dc2430);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.breadcrumb {
+	background: transparent;
+	padding: 0;
+}
+
+.breadcrumb a {
+	color: #fff;
+}
+
+.breadcrumb > .active {
+	color: rgba(255,255,255, 0.5);
+}
+
+.datepicker table thead tr:first-child th {
+	background: #dc2430;
+}
+
+.datepicker table thead tr:first-child th:hover {
+	background: #dc2430;
+}
+
+.datepicker table thead tr:last-child:not(:only-child) {
+	background: #be202b;
+}
+
+.datepicker table td.active:before {
+	background-color: #dc2430;
+}
+
+.sweet-alert {
+	padding-bottom: 30px;
+}
+
+.sweet-alert h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.sweet-alert p {
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+.sweet-alert button.confirm {
+    background: #dc2430 !important;
+    box-shadow: none;
+}
+
+.sweet-alert button.confirm:hover {
+	background-color: #be202b !important;
+}
+
+.sweet-alert button.cancel {
+    background-color: #7b4397 !important;
+    box-shadow: none;
+}
+.sweet-alert button.cancel:hover {
+	background-color: #603874 !important;
+}
+
+.transparent {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+/*---------------------------------
+    Content
+----------------------------------*/
+
+body.toggled #main {
+	margin-left: -230px;
+	transition: .1s all ease-in-out;
+}
+
+#main {
+	-webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+}
+
+.toggle-switch .ts-label {
+    min-width: 130px;
+}
+
+.inner-layer {
+	min-height: 425px;
+}
+
+.btn-float:hover i {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.p-b-15 {
+	padding-bottom: 15px !important;
+}
+
+.theme-color {
+	color: #dc2430 !important;
+}
+
+.theme-bg-dark {
+	background: rgba(0,0,0, 0.15);
+}
+
+.theme-bg-1 {
+	background: #dc2430 !important;
+}
+
+.theme-bg-2 {
+	background: #7b4397 !important;
+}
+
+.p-b-13 {
+	padding-bottom: 13px !important; 
+}
+
+.m-n-t-17 {
+	margin-top: -17px !important;
+}
+
+.m-n-r-5 {
+	margin-right: -5px !important;
+}
+
+
+.btn-float {
+	z-index: 999;
+}
+
+.d-btn {
+    bottom: 100px;
+    right: 40px;
+}
+
+.checkbox input:checked + .input-helper:before {
+	border-color: #dc2430 !important;
+	background-color: #dc2430 !important;
+}
+
+.radio input:checked + .input-helper:before {
+	border-color: #dc2430 !important;
+}
+
+.radio .input-helper:after {
+	background: #dc2430;
+}
+
+.pagination > .active > a, 
+.pagination > .active > span, .pagination > .active > a:hover, 
+.pagination > .active > span:hover, .pagination > .active > a:focus, 
+.pagination > .active > span:focus {
+	background: #dc2430;
+}
+
+.btn:not(.btn-link) {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.12);
+}
+
+.command-edit, .command-edit:active, 
+.command-delete, .command-delete:active,
+.command-undo, .command-undo:active,
+.command-download, .command-download:active,
+.command-lock, .command-lock:active,
+.command-post, .command-post:active {
+	background: #fff;	
+    border: 1px solid #eee !important;
+}
+
+.command-undo .zmdi,
+.command-edit .zmdi, 
+.command-delete .zmdi,
+.command-download .zmdi,
+.command-lock .zmdi,
+.command-post .fa  {
+    color: #6D6D6D;
+}
+
+.waves-button, 
+.waves-circle {
+	-webkit-mask-image: none;
+}
+
+.btn-close {
+	background: #eee;
+}
+
+.btn-close:hover {
+	background: #d2cccc !important;
+}
+
+.modal-backdrop {
+	z-index: 1001;
+}
+
+.fg-line .form-control:disabled {
+	font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 17px;
+    color: #000000;
+}
+
+span.c-red {
+	margin-left: 3px;
+}
+
+.action-header {
+	margin-bottom: 0;
+}
+
+#add-bill-of-materials .bootstrap-select > .btn-default:before {
+	background: transparent;
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+#add-bill-of-materials .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+	color: #fff;
+}
+
+#add-bill-of-materials .bootstrap-select > .btn-default {
+    border-bottom: 1px solid transparent !important;
+}
+
+#add-bill-of-materials .bootstrap-select.btn-group .dropdown-toggle .caret {
+	color: #fff;
+	font-size: 20px;
+}
+
+button[data-toggle="modal"] i {
+	font-size: 18px;
+	margin-right: 7px;
+	float: left;
+}
+
+.has-error .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+	border-bottom: 1px solid #f6675d;	
+}
+
+/*---------------------------------
+    Job Order
+----------------------------------*/
+
+.datepicker table thead th, .bootstrap-select > .btn-default:not(.disabled):after, .bootstrap-select > .btn-default:not(.readonly):after, .fg-line:not([class*=has-]):after {
+    background: rgba(220, 60, 49,0.8);
+}
+.bootgrid-footer, 
+.bootgrid-header {
+	margin: 0;
+}
+
+.table > thead > tr > th:first-child, 
+.table > tbody > tr > th:first-child, 
+.table > tfoot > tr > th:first-child, 
+.table > thead > tr > td:first-child, 
+.table > tbody > tr > td:first-child, 
+.table > tfoot > tr > td:first-child {
+	padding-right: 10px;
+}
+
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td {
+	padding: 5px 15px;
+}
+
+.table > tbody > tr:last-child > td, 
+.table > tfoot > tr:last-child > td {
+	padding-bottom: 5px;
+}
+
+.bootstrap-select {
+	margin-top: 4px;
+}
+
+#job-order .job-no {
+	margin-top: 0px;
+	border-bottom : 1px solid #e0e0e0;
+	padding-bottom: 5px;
+}
+
+.job-menu {
+	margin-top: -15px;
+	margin-right: -15px;
+}
+
+.job-menu .dropdown-menu {
+	/*width: 220px;*/
+	width: 206px;
+}
+
+.h-apps .dropdown-menu > li > a {
+	float: left;
+}
+
+.job-header {
+	border-bottom: 2px solid #333;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+
+.btn-remove {
+	border-radius: 30%;
+	padding: 4px 10px;
+	margin-top: 7px;
+}
+
+.job-free {
+	margin-top: 10px;
+}
+
+/*---------------------------------
+    Job Request
+----------------------------------*/
+
+#add-job-request .photos {
+	padding: 29px;
+}
+
+#add-job-request .margin-top {
+	margin-top: 29px;
+}
+
+/*---------------------------------
+    Job Estimate
+----------------------------------*/
+
+/*---------------------------------
+    Purchase Order
+----------------------------------*/
+
+#add-purchase-order h4.job-no {
+	border-bottom : 1px solid #e0e0e0;
+	padding-bottom: 5px;
+}
+
+
+/*---------------------------------
+    Job Estimate
+----------------------------------*/
+
+#add-delivery-packing h2.job-no {
+	margin-top: 0px;
+	border-bottom : 1px solid #e0e0e0;
+	padding-bottom: 5px;
+}
+
+#add-delivery-packing h4.job-no {
+	border-bottom : 1px solid #e0e0e0;
+	padding-bottom: 5px;
+}
+
+/*---------------------------------
+    make bill of materials
+----------------------------------*/
+
+#make-bill-of-materials table#material-line-table td:nth-child(2),
+#make-bill-of-materials table#job-out-line-table td:nth-child(2),
+#make-bill-of-materials table#material-line-table th:nth-child(2),
+#make-bill-of-materials table#job-out-line-table th:nth-child(2) {
+	display: none;
+}
+
+#make-bill-of-materials .ahs-input {
+	background: #dc2430 !important;
+	border-bottom: 1px solid #dc2430 !important;
+	color: #fff;
+}
+
+#make-bill-of-materials .ah-search-close {
+	color: #fff;
+}
+
+/*---------------------------------
+    bom request for pr
+----------------------------------*/
+
+#request-for-pr .hiddenRow {
+    padding: 0 !important;
+}
+
+#request-for-pr .panel-group .panel + .panel {
+	margin-top: 0;
+}
+
+#request-for-pr .panel-group {
+	margin-bottom: 0;
+}
+
+#request-for-pr .panel-body {
+	padding: 0;
+}
+
+#request-for-pr .panel-title > a {
+	padding: 15px 30px;
+}
+
+#request-for-pr td .zmdi-hc-fw {
+	text-align: left;
+}
+
+#request-for-pr a .zmdi-hc-fw {
+	text-align: center;
+}
+
+#request-for-pr #request-for-pr-table td {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#request-for-pr #request-for-pr-table i.zmdi-hc-fw {
+	font-size: 18px;
+	float: left;
+}
+
+#request-for-pr tr[aria-expanded=true],
+#request-for-pr tr[aria-expanded=false] {
+	cursor: pointer;
+}
+
+#request-for-pr tr[aria-expanded=true] .zmdi-chevron-right,
+#request-for-pr a[aria-expanded=true] .zmdi-chevron-right {
+   display: none;
+}
+
+#request-for-pr tr[aria-expanded=false] .zmdi-chevron-down,
+#request-for-pr a[aria-expanded=false] .zmdi-chevron-down {
+   display: none;
+}
+
+#request-for-pr .table-striped > tbody > tr:nth-of-type(odd):hover {
+	background: #ededed;
+}
+
+#request-for-pr .table-striped > tbody > tr:nth-of-type(odd)[aria-expanded=true],
+#request-for-pr .table-hover tr[aria-expanded=true],
+#request-for-pr .table-hover a[aria-expanded=true] {
+	background: #fffba4;
+}
+
+#request-for-pr .panel-default > .panel-heading.active {
+	background: #fffba4;
+}
+
+#request-for-pr .panel-heading:hover {
+	background: #ededed;
+}
+
+#request-for-pr .comepleted .panel-default > .panel-heading.active,
+#request-for-pr .completed .panel-heading {
+	background: #c4e3f3 !important;
+}
+
+#request-for-pr button i {
+	font-size: 18px;
+    margin-right: 7px;
+    float: left;
+}
+
+#request-for-pr .search .form-control, 
+#request-for-pr.search .input-group-addon {
+	border: 0;
+}
+
+#request-for-pr .search {
+    border: 1px solid #e0e0e0;
+}
+
+/*---------------------------------
+    purchase request
+----------------------------------*/
+
+#add-purchase-request table td:nth-child(2), 
+#add-purchase-request table td:nth-child(2) {
+	display: none;
+}
+
+#add-purchase-request .table > thead > tr > th:nth-child(2),
+#add-purchase-request .table > thead > tr > td:nth-child(2) {
+	display: none !important;
+}
+
+/*---------------------------------
+    delivery schedules
+----------------------------------*/
+
+#delivery-schedules .search .form-control, 
+#delivery-schedules.search .input-group-addon {
+	border: 0;
+}
+
+#delivery-schedules .search {
+    border: 1px solid #e0e0e0;
+}
+
+#delivery-schedules .actionz .btn-group {
+	border: 1px solid #e0e0e0;
+}
+
+#delivery-schedules .actionz {
+	box-shadow: none;
+}
+
+#delivery-schedules .actionz .btn-group .btn {
+    height: 35px;
+    box-shadow: none !important;
+    background: transparent;
+}
+
+#delivery-schedules .actionz .caret {
+	display: none;
+}
+
+#delivery-schedules .actionz .dropdown-menu.pull-right {
+    right: auto;
+    margin-left: 51px;
+}
+
+/*---------------------------------
+    Media Queries
+----------------------------------*/
+
+@media (max-width: 1279px) {
+	.hidden-md {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.super-modal-lg {
+		width: 90%;
+	}
+}
