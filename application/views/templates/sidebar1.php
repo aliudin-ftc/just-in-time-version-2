@@ -16,7 +16,7 @@
             <div class="list-group lg-alt c-overflow">
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/1.jpg'); ?>" alt="">
                     </div>
 
                     <div class="media-body">
@@ -27,7 +27,7 @@
 
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/5.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <div class="lgi-heading">Candice Barnes</div>
@@ -37,7 +37,7 @@
 
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/3.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <div class="lgi-heading">Jeannette Lawson</div>
@@ -47,7 +47,7 @@
 
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/4.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <div class="lgi-heading">Darla Mckinney</div>
@@ -57,7 +57,7 @@
 
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <div class="lgi-heading">Rudolph Perez</div>
@@ -80,7 +80,7 @@
             <div class="list-group lg-alt c-overflow">
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/1.jpg'); ?>" alt="">
                     </div>
 
                     <div class="media-body">
@@ -91,7 +91,7 @@
 
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/5.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <div class="lgi-heading">Candice Barnes</div>
@@ -101,7 +101,7 @@
 
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/3.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <div class="lgi-heading">Jeannette Lawson</div>
@@ -111,7 +111,7 @@
 
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/4.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <div class="lgi-heading">Darla Mckinney</div>
@@ -121,7 +121,7 @@
 
                 <a href="" class="list-group-item media">
                     <div class="pull-left">
-                        <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
+                        <img class="avatar-img" src="<?php echo base_url('assets/public/img/profile-pics/2.jpg'); ?>" alt="">
                     </div>
                     <div class="media-body">
                         <div class="lgi-heading">Rudolph Perez</div>

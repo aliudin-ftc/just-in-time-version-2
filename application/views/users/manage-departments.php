@@ -30,6 +30,6 @@
     </div>
 </section>
 
-<button onClick="location.href='<?php echo base_url(); ?>maintenance/customer/add';" title="Add New Customer" class="btn btn-float theme-bg-1 m-btn waves-effect waves-circle waves-float">
+<button onClick="location.href='<?php echo base_url(); ?>maintenance/departments/add';" title="Add New Customer" class="btn btn-float theme-bg-1 m-btn waves-effect waves-circle waves-float">
     <i class="zmdi zmdi-plus"></i>
 </button>
