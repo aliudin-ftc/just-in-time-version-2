@@ -9,7 +9,7 @@
             <div class="form-group required">
                 <label class="f-500 m-b-5 c-black">Name</label>
                 <div class="fg-line">
-                    <?php echo form_input($this->Customer_Model->form_input_attributes('customer_name', $info)); ?>
+                    <?php echo form_input($input['customer_name']); ?>
                 </div>
                 <small class="help-block"></small>
             </div>
@@ -18,7 +18,7 @@
             <div class="form-group required">
                 <label class="f-500 m-b-5 c-black">Description</label>
                 <div class="fg-line">
-                    <?php echo form_input($this->Customer_Model->form_input_attributes('customer_description', $info)); ?>
+                    <?php echo form_input($input['customer_description']); ?>
                 </div>
                 <small class="help-block"></small>
             </div>
@@ -27,7 +27,7 @@
             <div class="form-group required">
                 <label class="f-500 m-b-5 c-black">Code</label>
                 <div class="fg-line">
-                    <?php echo form_input($this->Customer_Model->form_input_attributes('customer_code', $info)); ?>
+                    <?php echo form_input($input['customer_code']); ?>
                 </div>
                 <small class="help-block"></small>
             </div>
@@ -40,9 +40,9 @@
                 <?php 
                     echo 
                         form_dropdown(
-                            $this->Business_Unit_Model->form_select_attributes('business_unit_id'), 
-                            $this->Business_Unit_Model->form_select_options('business_unit'),
-                            $this->Business_Unit_Model->form_selected_options($info)
+                            $input['business_unit_attributes'],
+                            $input['business_unit_options'],
+                            $input['business_unit_selected']
                         ); 
                 ?>
                 <small class="help-block"></small>
@@ -54,9 +54,9 @@
                 <?php 
                     echo 
                         form_dropdown(
-                            $this->Resources_Model->form_select_attributes('resources_id'), 
-                            $this->Resources_Model->form_select_options('account executive'),
-                            $this->Resources_Model->form_selected_options($info)
+                            $input['resources_attributes'],
+                            $input['resources_options'],
+                            $input['resources_selected']
                         );  
                 ?>
                 <small class="help-block"></small>
@@ -68,9 +68,9 @@
                 <?php 
                     echo 
                         form_dropdown(
-                            $this->Business_Style_Model->form_select_attributes('business_style_id'), 
-                            $this->Business_Style_Model->form_select_options('business_style'),
-                            $this->Business_Style_Model->form_selected_options($info)
+                            $input['business_style_attributes'],
+                            $input['business_style_options'],
+                            $input['business_style_selected']
                         ); 
                 ?>
                 <small class="help-block"></small>
@@ -84,9 +84,9 @@
                 <?php 
                     echo 
                         form_dropdown(
-                            $this->Tax_Type_Model->form_select_attributes('tax_type_id'), 
-                            $this->Tax_Type_Model->form_select_options('tax_type'),
-                            $this->Tax_Type_Model->form_selected_options($info)
+                            $input['tax_type_attributes'],
+                            $input['tax_type_options'],
+                            $input['tax_type_selected']
                         ); 
                 ?>
                 <small class="help-block"></small>
@@ -98,9 +98,9 @@
                 <?php 
                     echo 
                         form_dropdown(
-                            $this->Document_Type_Model->form_select_attributes('document_type_id'), 
-                            $this->Document_Type_Model->form_select_options('document_type'),
-                            $this->Document_Type_Model->form_selected_options($info)
+                            $input['document_type_attributes'],
+                            $input['document_type_options'],
+                            $input['document_type_selected']
                         ); 
                 ?>
                 <small class="help-block"></small>
@@ -112,9 +112,9 @@
                 <?php 
                     echo 
                         form_dropdown(
-                            $this->Tier_Model->form_select_attributes('tier_id'), 
-                            $this->Tier_Model->form_select_options('tier'),
-                            $this->Tier_Model->form_selected_options($info)
+                            $input['tier_attributes'],
+                            $input['tier_options'],
+                            $input['tier_selected']
                         ); 
                 ?>
                 <small class="help-block"></small>
@@ -126,7 +126,7 @@
             <div class="form-group required">
                 <label class="f-500 m-b-5 c-black">TIN</label>
                 <div class="fg-line">
-                    <?php echo form_input($this->Customer_Model->form_input_attributes('customer_tin', $info)); ?>
+                    <?php echo form_input($input['customer_tin']); ?>
                 </div>
                 <small class="help-block"></small>
             </div>
@@ -135,7 +135,7 @@
             <div class="form-group required">
                 <label class="f-500 m-b-5 c-black">Credit Limit</label>
                 <div class="fg-line">
-                    <?php echo form_input($this->Customer_Model->form_input_numeric_attributes('customer_credit_limit', $info)); ?>
+                    <?php echo form_input($input['customer_credit_limit']); ?>
                 </div>
                 <small class="help-block"></small>
             </div>
@@ -144,7 +144,7 @@
             <div class="form-group required">
                 <label class="f-500 m-b-5 c-black">Credit Note</label>
                 <div class="fg-line">
-                    <?php echo form_input($this->Customer_Model->form_input_attributes('customer_credit_note', $info)); ?>
+                    <?php echo form_input($input['customer_credit_note']); ?>
                 </div>
                 <small class="help-block"></small>
             </div>
@@ -155,7 +155,7 @@
             <div class="form-group">
                 <label class="f-500 m-b-5 c-black">Delivery Guidelines</label>
                 <div class="fg-line">
-                    <?php echo form_textarea($this->Customer_Model->form_textarea_attributes('customer_delivery_guidelines', $info)); ?>
+                    <?php echo form_textarea($input['customer_delivery_guidelines']); ?>
                 </div>
                 <small class="help-block"></small>
             </div>
@@ -164,7 +164,7 @@
             <div class="form-group">
                 <label class="f-500 m-b-5 c-black">Remarks</label>
                 <div class="fg-line">
-                    <?php echo form_textarea($this->Customer_Model->form_textarea_attributes('customer_remarks', $info)); ?>
+                    <?php echo form_textarea($input['customer_remarks']); ?>
                 </div>
                 <small class="help-block"></small>
             </div>
@@ -179,7 +179,7 @@
                     <span class="btn btn-info btn-file theme-bg-1">
                         <span class="fileinput-new">Add Logo</span>
                         <span class="fileinput-exists">Change</span>
-                        <input type="file" id="customer_logo" name="customer_logo" value="<?php echo $this->Customer_Model->form_file($info); ?>">
+                        <input type="file" id="customer_logo" name="customer_logo" value="<?php echo $input['customer_file']; ?>">
                     </span>
                     <a href="#" class="btn btn-danger theme-bg-2 fileinput-exists" data-dismiss="fileinput">Remove</a>
                 </div>

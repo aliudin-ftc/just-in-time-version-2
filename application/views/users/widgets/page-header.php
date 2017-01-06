@@ -9,13 +9,13 @@
 		        </a>
 		        <ul class="dropdown-menu pull-right">
 		            <li>
-		                <a href="<?php echo base_url('users/maintenance/'.$template["page"]["category"].'/manage'); ?>">
+		                <a href="<?php echo base_url('maintenance/'.$template["page"]["category"].'/manage'); ?>">
 		                    <i class="theme-bg-1 bg zmdi zmdi-settings"></i>
 		                    <small>Manage</small>
 		                </a>
 		            </li>
 		            <li> 
-		                <a href="<?php echo base_url('users/maintenance/'.$template["page"]["category"].'/archived'); ?>">
+		                <a href="<?php echo base_url('maintenance/'.$template["page"]["category"].'/archived'); ?>">
 		                    <i class="theme-bg-2 bg zmdi zmdi-archive"></i>
 		                    <small>Archived</small>
 		                </a>
