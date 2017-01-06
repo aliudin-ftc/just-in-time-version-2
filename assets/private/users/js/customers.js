@@ -134,7 +134,7 @@
                 },  function(isConfirm){
                     if (isConfirm) {
                         $.customer.refresh($form);
-                        document.location.href = base_url + 'users/maintenance/customer/manage';
+                        document.location.href = base_url + 'maintenance/customer/manage';
                     }
                 });                   
             }, 2000);
@@ -159,7 +159,7 @@
     */
     customer.prototype.image_file = function() {
 
-        var url  = base_url + "users/maintenance/customer/find/"+base_line;
+        var url  = base_url + "maintenance/customer/find/"+base_line;
 
         if($.isNumeric(base_line)){
             
@@ -230,7 +230,7 @@
             var $error = 0;
             var $form = $("#customer-form");
             var $errors = $.customer.validate($form, $error);
-            var $action = base_url + "users/maintenance/customer/";
+            var $action = base_url + "maintenance/customer/";
 
             if($('#customer_logo').val()){
                 var inputfile = $('#customer_logo').get(0).files[0].name;    
@@ -309,7 +309,7 @@
             var $error = 0;
             var $form = $("#customer-form");
             var $errors = $.customer.validate($form, $error);
-            var $action = base_url + "users/maintenance/customer/";
+            var $action = base_url + "maintenance/customer/";
 
             if($('#customer_logo').val()){
                 var inputfile = $('#customer_logo').get(0).files[0].name;    
@@ -426,7 +426,7 @@
                 console.log(response);
                 return response;
             },
-            url: base_url + "users/maintenance/customer/lists",
+            url: base_url + "maintenance/customer/lists",
             keepSelection: true,
             selection: true,
             multiSelect: true,
@@ -449,7 +449,7 @@
 
                 var id   = $(this).parents('tr').data('row-id'),
                 customer = $(this).parents('tr').find('td:nth-child(3)').text(),
-                    url  = base_url + "users/maintenance/customer/edit/"+id;
+                    url  = base_url + "maintenance/customer/edit/"+id;
 
                 document.location = url;    
                 
@@ -465,7 +465,7 @@
 
                 var id   = $(this).parents('tr').data('row-id'),
                 customer = $(this).parents('tr').find('td:nth-child(3)').text(),
-                    url  = base_url + "users/maintenance/customer/delete/"+id;
+                    url  = base_url + "maintenance/customer/delete/"+id;
 
                 swal({
                     title: "Are you sure?",
@@ -541,7 +541,7 @@
                 console.log(response);
                 return response;
             },
-            url: base_url + "users/maintenance/customer/archived-lists",
+            url: base_url + "maintenance/customer/archived-lists",
             keepSelection: true,
             selection: true,
             multiSelect: true,
@@ -564,7 +564,7 @@
 
                 var id   = $(this).parents('tr').data('row-id'),
                 customer = $(this).parents('tr').find('td:nth-child(3)').text(),
-                    url  = base_url + "users/maintenance/customer/undo/"+id;
+                    url  = base_url + "maintenance/customer/undo/"+id;
 
                 swal({
                     title: "Are you sure?",

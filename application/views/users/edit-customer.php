@@ -18,7 +18,7 @@
     </div><!--container-->
 </section><!--content-->
 
-<button onClick="location.href='<?php echo base_url(); ?>users/maintenance/customer/manage';" id="back-customer-btn" title="Back to Manage Customers"  class="btn btn-float theme-bg-2 m-btn d-btn waves-effect waves-circle waves-float">
+<button onClick="location.href='<?php echo base_url(); ?>maintenance/customer/manage';" id="back-customer-btn" title="Back to Manage Customers"  class="btn btn-float theme-bg-2 m-btn d-btn waves-effect waves-circle waves-float">
     <i class="zmdi zmdi-arrow-left"></i>
 </button>
 
