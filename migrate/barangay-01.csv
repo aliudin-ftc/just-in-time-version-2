@@ -1,0 +1,2283 @@
+1,1,Agtangao,Agtangao
+2,1,Angad,Angad
+3,1,Bañacao,Bañacao
+4,1,Bangbangar,Bangbangar
+5,1,Cabuloan,Cabuloan
+6,1,Calaba,Calaba
+7,1,Cosili East (Proper),Cosili East (Proper)
+8,1,Cosili West (Buaya),Cosili West (Buaya)
+9,1,Dangdangla,Dangdangla
+10,1,Lingtan,Lingtan
+11,1,Lipcan,Lipcan
+12,1,Lubong,Lubong
+13,1,Macarcarmay,Macarcarmay
+14,1,Macray,Macray
+15,1,Malita,Malita
+16,1,Maoay,Maoay
+17,1,Palao,Palao
+18,1,Patucannay,Patucannay
+19,1,Sagap,Sagap
+20,1,San Antonio,San Antonio
+21,1,Santa Rosa,Santa Rosa
+22,1,Sao-atan,Sao-atan
+23,1,Sappaac,Sappaac
+24,1,Tablac (Calot),Tablac (Calot)
+25,1,Zone 1 Poblacion (Nalasin),Zone 1 Poblacion (Nalasin)
+26,1,Zone 2 Poblacion (Consiliman),Zone 2 Poblacion (Consiliman)
+27,1,Zone 3 Poblacion (Lalaud),Zone 3 Poblacion (Lalaud)
+28,1,Zone 4 Poblacion (Town Proper),Zone 4 Poblacion (Town Proper)
+29,1,Zone 5 Poblacion (Bo. Barikir),Zone 5 Poblacion (Bo. Barikir)
+30,1,Zone 6 Poblacion (Sinapangan),Zone 6 Poblacion (Sinapangan)
+31,1,Zone 7 Poblacion (Baliling),Zone 7 Poblacion (Baliling)
+32,2,Amti,Amti
+33,2,Bao-yan,Bao-yan
+34,2,Danac East,Danac East
+35,2,Danac West,Danac West
+36,2,Dao-angan,Dao-angan
+37,2,Dumagas,Dumagas
+38,2,Kilong-Olao,Kilong-Olao
+39,2,Poblacion (Boliney),Poblacion (Boliney)
+40,3,Abang,Abang
+41,3,Bangbangcag,Bangbangcag
+42,3,Bangcagan,Bangcagan
+43,3,Banglolao,Banglolao
+44,3,Bugbog,Bugbog
+45,3,Calao,Calao
+46,3,Dugong,Dugong
+47,3,Labon,Labon
+48,3,Layugan,Layugan
+49,3,Madalipay,Madalipay
+50,3,North Poblacion,North Poblacion
+51,3,Pagala,Pagala
+52,3,Pakiling,Pakiling
+53,3,Palaquio,Palaquio
+54,3,Patoc,Patoc
+55,3,Quimloong,Quimloong
+56,3,Salnec,Salnec
+57,3,San Miguel,San Miguel
+58,3,Siblong,Siblong
+59,3,South Poblacion,South Poblacion
+60,3,Tabiog,Tabiog
+61,4,Ducligan,Ducligan
+62,4,Labaan,Labaan
+63,4,Lamao (Poblacion),Lamao (Poblacion)
+64,4,Lingay,Lingay
+65,5,Ableg,Ableg
+66,5,Cabaruyan,Cabaruyan
+67,5,Pikek,Pikek
+68,5,Tui (Poblacion),Tui (Poblacion)
+69,6,Abaquid,Abaquid
+70,6,Cabaruan,Cabaruan
+71,6,Caupasan (Poblacion),Caupasan (Poblacion)
+72,6,Danglas,Danglas
+73,6,Nagaparan,Nagaparan
+74,6,Padangitan,Padangitan
+75,6,Pangal,Pangal
+76,7,Bayaan,Bayaan
+77,7,Cabaroan,Cabaroan
+78,7,Calumbaya,Calumbaya
+79,7,Cardona,Cardona
+80,7,Isit,Isit
+81,7,Kimmalaba,Kimmalaba
+82,7,Libtec,Libtec
+83,7,Lub-lubba,Lub-lubba
+84,7,Mudiit,Mudiit
+85,7,Namit-ingan,Namit-ingan
+86,7,Pacac,Pacac
+87,7,Poblacion,Poblacion
+88,7,Salucag,Salucag
+89,7,Talogtog,Talogtog
+90,7,Taping,Taping
+91,8,Benben (Bonbon),Benben (Bonbon)
+92,8,Bulbulala,Bulbulala
+93,8,Buli,Buli
+94,8,Canan (Gapan),Canan (Gapan)
+95,8,Liguis,Liguis
+96,8,Malabbaga,Malabbaga
+97,8,Mudeng,Mudeng
+98,8,Pidipid,Pidipid
+99,8,Poblacion,Poblacion
+100,8,San Gregorio,San Gregorio
+101,8,Toon,Toon
+102,8,Udangan,Udangan
+103,9,Bacag,Bacag
+104,9,Buneg,Buneg
+105,9,Guinguinabang,Guinguinabang
+106,9,Lan-ag,Lan-ag
+107,9,Pacoc,Pacoc
+108,9,Poblacion (Talampac),Poblacion (Talampac)
+109,10,Aguet,Aguet
+110,10,Bacooc,Bacooc
+111,10,Balais,Balais
+112,10,Cayapa,Cayapa
+113,10,Dalaguisen,Dalaguisen
+114,10,Laang,Laang
+115,10,Lagben,Lagben
+116,10,Laguiben,Laguiben
+117,10,Nagtipulan,Nagtipulan
+118,10,Nagtupacan,Nagtupacan
+119,10,Paganao,Paganao
+120,10,Pawa,Pawa
+121,10,Poblacion,Poblacion
+122,10,Presentar,Presentar
+123,10,San Isidro,San Isidro
+124,10,Tagodtod,Tagodtod
+125,10,Taping,Taping
+126,11,Ba-i,Ba-i
+127,11,Collago,Collago
+128,11,Pang-ot,Pang-ot
+129,11,Poblacion,Poblacion
+130,11,Pulot,Pulot
+131,12,Baac,Baac
+132,12,Dalayap (Nalaas),Dalayap (Nalaas)
+133,12,Mabungtot,Mabungtot
+134,12,Malapaao,Malapaao
+135,12,Poblacion,Poblacion
+136,12,Quillat,Quillat
+137,13,Bonglo (Patagui),Bonglo (Patagui)
+138,13,Bulbulala,Bulbulala
+139,13,Cawayan,Cawayan
+140,13,Domenglay,Domenglay
+141,13,Lenneng,Lenneng
+142,13,Mapisla,Mapisla
+143,13,Mogao,Mogao
+144,13,Nalbuan,Nalbuan
+145,13,Poblacion,Poblacion
+146,13,Subagan,Subagan
+147,13,Tumalip,Tumalip
+148,14,Ampalioc,Ampalioc
+149,14,Barit,Barit
+150,14,Gayaman,Gayaman
+151,14,Lul-luno,Lul-luno
+152,14,Luzong,Luzong
+153,14,Nagbukel-Tiquipa,Nagbukel-Tiquipa
+154,14,Poblacion,Poblacion
+155,14,Sabnangan,Sabnangan
+156,15,Bayabas,Bayabas
+157,15,Binasaran,Binasaran
+158,15,Buanao,Buanao
+159,15,Dulao,Dulao
+160,15,Duldulao,Duldulao
+161,15,Gacab,Gacab
+162,15,Lat-ey,Lat-ey
+163,15,Malibcong (Poblacion),Malibcong (Poblacion)
+164,15,Mataragan,Mataragan
+165,15,Pacgued,Pacgued
+166,15,Taripan,Taripan
+167,15,Umnap,Umnap
+168,16,Ayyeng (Poblacion),Ayyeng (Poblacion)
+169,16,Catacdegan Nuevo,Catacdegan Nuevo
+170,16,Catacdegan Viejo,Catacdegan Viejo
+171,16,Luzong,Luzong
+172,16,San Jose Norte,San Jose Norte
+173,16,San Jose Sur,San Jose Sur
+174,16,San Juan Norte,San Juan Norte
+175,16,San Juan Sur,San Juan Sur
+176,16,San Ramon East,San Ramon East
+177,16,San Ramon West,San Ramon West
+178,16,Santo Tomas,Santo Tomas
+179,17,Dumayco,Dumayco
+180,17,Lusuac,Lusuac
+181,17,Malamsit (Pau-Malamsit),Malamsit (Pau-Malamsit)
+182,17,Namarabar,Namarabar
+183,17,Patiao,Patiao
+184,17,Poblacion,Poblacion
+185,17,Riang (Tiang),Riang (Tiang)
+186,17,Santa Rosa,Santa Rosa
+187,17,Tattawa,Tattawa
+188,18,Alinaya,Alinaya
+189,18,Arab,Arab
+190,18,Garreta,Garreta
+191,18,Immuli,Immuli
+192,18,Laskig,Laskig
+193,18,Monggoc,Monggoc
+194,18,Naguirayan,Naguirayan
+195,18,Pamutic,Pamutic
+196,18,Pangtud,Pangtud
+197,18,Poblacion East,Poblacion East
+198,18,Poblacion West,Poblacion West
+199,18,San Diego,San Diego
+200,18,Sulbec,Sulbec
+201,18,Suyo (Malidong),Suyo (Malidong)
+202,18,Yuyeng,Yuyeng
+203,19,Bolbolo,Bolbolo
+204,19,Brookside,Brookside
+205,19,Dalit,Dalit
+206,19,Dintan,Dintan
+207,19,Gapang,Gapang
+208,19,Kinabiti,Kinabiti
+209,19,Maliplipit,Maliplipit
+210,19,Nagcanasan,Nagcanasan
+211,19,Nanangduan,Nanangduan
+212,19,Narnara,Narnara
+213,19,Ocup,Ocup
+214,19,Pang-ot,Pang-ot
+215,19,Patad,Patad
+216,19,Poblacion,Poblacion
+217,19,San Juan East,San Juan East
+218,19,San Juan West,San Juan West
+219,19,South Balioag,South Balioag
+220,19,Tikitik,Tikitik
+221,19,Villavieja,Villavieja
+222,20,Bazar,Bazar
+223,20,Bilabila,Bilabila
+224,20,Gangal (Poblacion),Gangal (Poblacion)
+225,20,Maguyepyep,Maguyepyep
+226,20,Naguilian,Naguilian
+227,20,Saccaang,Saccaang
+228,20,Sallapadan,Sallapadan
+229,20,Subusob,Subusob
+230,20,Ud-udiao,Ud-udiao
+231,21,Cabayogan,Cabayogan
+232,21,Dalimag,Dalimag
+233,21,Langbaban,Langbaban
+234,21,Manayday,Manayday
+235,21,Pantoc,Pantoc
+236,21,Poblacion,Poblacion
+237,21,Sabtan-olo,Sabtan-olo
+238,21,San Marcial,San Marcial
+239,21,Tangbao,Tangbao
+240,22,Abualan,Abualan
+241,22,Ba-ug,Ba-ug
+242,22,Badas,Badas
+243,22,Cabcaborao,Cabcaborao
+244,22,Colabaoan,Colabaoan
+245,22,Culiong,Culiong
+246,22,Daoidao,Daoidao
+247,22,Guimba,Guimba
+248,22,Lam-ag,Lam-ag
+249,22,Lumobang,Lumobang
+250,22,Nangobongan,Nangobongan
+251,22,Pattaoig,Pattaoig
+252,22,Poblacion North,Poblacion North
+253,22,Poblacion South,Poblacion South
+254,22,Quidaoen,Quidaoen
+255,22,Sabangan,Sabangan
+256,22,Silet,Silet
+257,22,Supi-il,Supi-il
+258,22,Tagaytay,Tagaytay
+259,23,Labaan,Labaan
+260,23,Palang,Palang
+261,23,Pantoc,Pantoc
+262,23,Poblacion,Poblacion
+263,23,Tangadan,Tangadan
+264,23,Villa Mercedes,Villa Mercedes
+265,24,Bagalay,Bagalay
+266,24,Basbasa,Basbasa
+267,24,Budac,Budac
+268,24,Bumagcat,Bumagcat
+269,24,Cabaroan,Cabaroan
+270,24,Deet,Deet
+271,24,Gaddani,Gaddani
+272,24,Patucannay,Patucannay
+273,24,Pias,Pias
+274,24,Poblacion,Poblacion
+275,24,Velasco,Velasco
+276,25,Alaoa,Alaoa
+277,25,Anayan,Anayan
+278,25,Apao,Apao
+279,25,Belaat,Belaat
+280,25,Caganayan,Caganayan
+281,25,Cogon,Cogon
+282,25,Lanec,Lanec
+283,25,Lapat-Balantay,Lapat-Balantay
+284,25,Naglibacan,Naglibacan
+285,25,Poblacion (Agsimao),Poblacion (Agsimao)
+286,26,Alangtin,Alangtin
+287,26,Amtuagan,Amtuagan
+288,26,Dilong,Dilong
+289,26,Kili,Kili
+290,26,Poblacion (Mayabo),Poblacion (Mayabo)
+291,26,Supo,Supo
+292,26,Tabacda,Tabacda
+293,26,Tiempo,Tiempo
+294,26,Tubtuba,Tubtuba
+295,26,Wayangan,Wayangan
+296,27,Ap-apaya,Ap-apaya
+297,27,Bol-lilising,Bol-lilising
+298,27,Cal-lao,Cal-lao
+299,27,Lap-lapog,Lap-lapog
+300,27,Lumaba,Lumaba
+301,27,Poblacion,Poblacion
+302,27,Tamac,Tamac
+303,27,Tuquib,Tuquib
+304,28,Abilan,Abilan
+305,28,Agong-ong,Agong-ong
+306,28,Alubijid,Alubijid
+307,28,Guinabsan,Guinabsan
+308,28,Lower Olave,Lower Olave
+309,28,Macalang,Macalang
+310,28,Malapong,Malapong
+311,28,Malpoc,Malpoc
+312,28,Manapa,Manapa
+313,28,Matabao,Matabao
+314,28,Poblacion 1,Poblacion 1
+315,28,Poblacion 2,Poblacion 2
+316,28,Poblacion 3,Poblacion 3
+317,28,Poblacion 4,Poblacion 4
+318,28,Poblacion 5,Poblacion 5
+319,28,Poblacion 6,Poblacion 6
+320,28,Poblacion 7,Poblacion 7
+321,28,Poblacion 8,Poblacion 8
+322,28,Poblacion 9,Poblacion 9
+323,28,Poblacion 10,Poblacion 10
+324,28,Rizal,Rizal
+325,28,Sacol,Sacol
+326,28,Sangay,Sangay
+327,28,Simbalan,Simbalan
+328,28,Talo-ao,Talo-ao
+329,29,Agao [Poblacion] (Barangay 3),Agao [Poblacion] (Barangay 3)
+330,29,Agusan Pequeño,Agusan Pequeño
+331,29,Ambago,Ambago
+332,29,Amparo,Amparo
+333,29,Ampayon,Ampayon
+334,29,Anticala,Anticala
+335,29,Antongalon,Antongalon
+336,29,Aupagan,Aupagan
+337,29,Baan KM 3,Baan KM 3
+338,29,Baan Riverside [Poblacion] (Barangay 20),Baan Riverside [Poblacion] (Barangay 20)
+339,29,Babag,Babag
+340,29,Bading [Poblacion] (Barangay 22),Bading [Poblacion] (Barangay 22)
+341,29,Bancasi,Bancasi
+342,29,Banza,Banza
+343,29,Baobaoan,Baobaoan
+344,29,Basag,Basag
+345,29,Bayanihan [Poblacion] (Barangay 27),Bayanihan [Poblacion] (Barangay 27)
+346,29,Bilay,Bilay
+347,29,Bit-os,Bit-os
+348,29,Bitan-agan,Bitan-agan
+349,29,Bobon,Bobon
+350,29,Bonbon,Bonbon
+351,29,Bugabus,Bugabus
+352,29,Bugsukan,Bugsukan
+353,29,Buhangin [Poblacion] (Barangay 19),Buhangin [Poblacion] (Barangay 19)
+354,29,Cabcabon,Cabcabon
+355,29,Camayahan,Camayahan
+356,29,Dagohoy [Poblacion] (Barangay 7),Dagohoy [Poblacion] (Barangay 7)
+357,29,Dankias,Dankias
+358,29,De Oro,De Oro
+359,29,Diego Silang [Poblacion] (Barangay 6),Diego Silang [Poblacion] (Barangay 6)
+360,29,Don Francisco,Don Francisco
+361,29,Doongan,Doongan
+362,29,Dulag,Dulag
+363,29,Dumalagan,Dumalagan
+364,29,Florida,Florida
+365,29,Fort Poyohon [Poblacion] (Barangay 17),Fort Poyohon [Poblacion] (Barangay 17)
+366,29,Golden Ribbon [Poblacion] (Barangay 2),Golden Ribbon [Poblacion] (Barangay 2)
+367,29,Imadejas [Poblacion] (Barangay 24),Imadejas [Poblacion] (Barangay 24)
+368,29,Jose Rizal [Poblacion] (Barangay 25),Jose Rizal [Poblacion] (Barangay 25)
+369,29,Holy Redeemer [Poblacion] (Barangay 23),Holy Redeemer [Poblacion] (Barangay 23)
+370,29,Humabon [Poblacion] (Barangay 11),Humabon [Poblacion] (Barangay 11)
+371,29,Kinamlutan,Kinamlutan
+372,29,Lapu-lapu [Poblacion] (Barangay 8),Lapu-lapu [Poblacion] (Barangay 8)
+373,29,Lemon,Lemon
+374,29,Leon Kilat [Poblacion] (Barangay 13),Leon Kilat [Poblacion] (Barangay 13)
+375,29,Libertad,Libertad
+376,29,Limaha [Poblacion] (Barangay 14),Limaha [Poblacion] (Barangay 14)
+377,29,Los Angeles,Los Angeles
+378,29,Lumbocan,Lumbocan
+379,29,Maguinda,Maguinda
+380,29,Mahay,Mahay
+381,29,Mahogany [Poblacion] (Barangay 21),Mahogany [Poblacion] (Barangay 21)
+382,29,Maibu,Maibu
+383,29,Mandamo,Mandamo
+384,29,Manila de Bugabus,Manila de Bugabus
+385,29,Maon [Poblacion] (Barangay 1),Maon [Poblacion] (Barangay 1)
+386,29,Masao,Masao
+387,29,Maug,Maug
+388,29,New Society Village [Poblacion] (Barangay 26),New Society Village [Poblacion] (Barangay 26)
+389,29,Nong-nong,Nong-nong
+390,29,Obrero [Poblacion] (Barangay 18),Obrero [Poblacion] (Barangay 18)
+391,29,Ong Yiu [Poblacion] (Barangay 16),Ong Yiu [Poblacion] (Barangay 16)
+392,29,Pagatpatan,Pagatpatan
+393,29,Pangabugan,Pangabugan
+394,29,Pianing,Pianing
+395,29,Pigdaulan,Pigdaulan
+396,29,Pinamanculan,Pinamanculan
+397,29,Rajah Soliman [Poblacion] (Barangay 4),Rajah Soliman [Poblacion] (Barangay 4)
+398,29,Salvación,Salvación
+399,29,San Ignacio [Poblacion] (Barangay 15),San Ignacio [Poblacion] (Barangay 15)
+400,29,San Mateo,San Mateo
+401,29,San Vicente,San Vicente
+402,29,Santo Niño,Santo Niño
+403,29,Sikatuna [Poblacion] (Barangay 10),Sikatuna [Poblacion] (Barangay 10)
+404,29,Silongan [Poblacion] (Barangay 5),Silongan [Poblacion] (Barangay 5)
+405,29,Sumile,Sumile
+406,29,Sumilihon,Sumilihon
+407,29,Tagabaca,Tagabaca
+408,29,Taguibo,Taguibo
+409,29,Taligaman,Taligaman
+410,29,Tandang Sora [Poblacion] (Barangay 12),Tandang Sora [Poblacion] (Barangay 12)
+411,29,Tiniwisan,Tiniwisan
+412,29,Tungao,Tungao
+413,29,Urduja [Poblacion] (Barangay 9),Urduja [Poblacion] (Barangay 9)
+414,29,Villa Kananga,Villa Kananga
+415,30,Antonio Luna,Antonio Luna
+416,30,Bay-ang,Bay-ang
+417,30,Bayabas,Bayabas
+418,30,Caasinan,Caasinan
+419,30,Cabinet,Cabinet
+420,30,Calamba,Calamba
+421,30,Calibunan,Calibunan
+422,30,Comagascas,Comagascas
+423,30,Concepcion,Concepcion
+424,30,Del Pilar,Del Pilar
+425,30,Katugasan,Katugasan
+426,30,Kauswagan,Kauswagan
+427,30,La Union,La Union
+428,30,Mabini,Mabini
+429,30,Mahaba,Mahaba
+430,30,Poblacion 1 - Jose Rizal,Poblacion 1 - Jose Rizal
+431,30,Poblacion 2 - Sampaguita,Poblacion 2 - Sampaguita
+432,30,Poblacion 3 - Snra. Candelaria,Poblacion 3 - Snra. Candelaria
+433,30,Poblacion 4 - Perpetual Succor,Poblacion 4 - Perpetual Succor
+434,30,Poblacion 5 - A. Bonifacio,Poblacion 5 - A. Bonifacio
+435,30,Poblacion 6,Poblacion 6
+436,30,Poblacion 7,Poblacion 7
+437,30,Poblacion 8 - Cadena de Amor,Poblacion 8 - Cadena de Amor
+438,30,Poblacion 9,Poblacion 9
+439,30,Poblacion 10 - Mango,Poblacion 10 - Mango
+440,30,Poblacion 11,Poblacion 11
+441,30,Poblacion 12 - Sunflower,Poblacion 12 - Sunflower
+442,30,Puting Bato,Puting Bato
+443,30,Sanghan,Sanghan
+444,30,Soriano,Soriano
+445,30,Tolosa,Tolosa
+446,31,Cahayagan,Cahayagan
+447,31,Gosoon,Gosoon
+448,31,Manoligao,Manoligao
+449,31,Poblacion (Carmen),Poblacion (Carmen)
+450,31,Rojales,Rojales
+451,31,San Agustin,San Agustin
+452,31,Tagcatong,Tagcatong
+453,31,Vinapor,Vinapor
+454,32,A. Beltran (Camalig),A. Beltran (Camalig)
+455,32,Baleguian,Baleguian
+456,32,Bangonay,Bangonay
+457,32,Bunga,Bunga
+458,32,Colorado,Colorado
+459,32,Cuyago,Cuyago
+460,32,Libas,Libas
+461,32,Magdagooc,Magdagooc
+462,32,Magsaysay,Magsaysay
+463,32,Maraiging,Maraiging
+464,32,Poblacion (Jabonga),Poblacion (Jabonga)
+465,32,San Jose,San Jose
+466,32,San Pablo,San Pablo
+467,32,San Vicente,San Vicente
+468,32,Santo Niño,Santo Niño
+469,33,Bangayan,Bangayan
+470,33,Canaway,Canaway
+471,33,Crossing,Crossing
+472,33,Hinimbangan,Hinimbangan
+473,33,Jaliobong,Jaliobong
+474,33,Mahayahay,Mahayahay
+475,33,Poblacion,Poblacion
+476,33,San Isidro,San Isidro
+477,33,San Roque,San Roque
+478,33,Sangay,Sangay
+479,33,Songkoy,Songkoy
+480,34,Ambacon,Ambacon
+481,34,Balungagan,Balungagan
+482,34,Bonifacio,Bonifacio
+483,34,Casiklan,Casiklan
+484,34,Consorcia,Consorcia
+485,34,Durian,Durian
+486,34,Eduardo G. Montilla (Camboayon),Eduardo G. Montilla (Camboayon)
+487,34,Ibuan,Ibuan
+488,34,Katipunan,Katipunan
+489,34,Lingayao,Lingayao
+490,34,Malicato,Malicato
+491,34,Maningalao,Maningalao
+492,34,Marcos Calo,Marcos Calo
+493,34,Mat-i,Mat-i
+494,34,Pinana-an,Pinana-an
+495,34,Poblacion,Poblacion
+496,34,Rosario,Rosario
+497,34,San Isidro,San Isidro
+498,34,San Roque,San Roque
+499,34,Tinucoran,Tinucoran
+500,35,Buhang,Buhang
+501,35,Caloc-an,Caloc-an
+502,35,Guiasan,Guiasan
+503,35,Marcos,Marcos
+504,35,Poblacion,Poblacion
+505,35,Santo Niño,Santo Niño
+506,35,Santo Rosario,Santo Rosario
+507,35,Taod-oy,Taod-oy
+508,36,Aclan,Aclan
+509,36,Amontay,Amontay
+510,36,Ata-atahon,Ata-atahon
+511,36,Barangay 1 (Poblacion),Barangay 1 (Poblacion)
+512,36,Barangay 2 (Poblacion),Barangay 2 (Poblacion)
+513,36,Barangay 3 (Poblacion),Barangay 3 (Poblacion)
+514,36,Barangay 4 (Poblacion),Barangay 4 (Poblacion)
+515,36,Barangay 5 (Poblacion),Barangay 5 (Poblacion)
+516,36,Barangay 6 (Poblacion),Barangay 6 (Poblacion)
+517,36,Barangay 7 (Poblacion),Barangay 7 (Poblacion)
+518,36,Camagong,Camagong
+519,36,Cubi-Cubi,Cubi-Cubi
+520,36,Culit,Culit
+521,36,Jaguimitan,Jaguimitan
+522,36,Kinabjangan,Kinabjangan
+523,36,Punta,Punta
+524,36,Santa Ana,Santa Ana
+525,36,Talisay,Talisay
+526,36,Triangulo,Triangulo
+527,37,Balangbalang,Balangbalang
+528,37,Basilisa,Basilisa
+529,37,Humilog,Humilog
+530,37,Panaytayon,Panaytayon
+531,37,Poblacion I (Agay),Poblacion I (Agay)
+532,37,Poblacion II,Poblacion II
+533,37,San Antonio,San Antonio
+534,37,Tagbongabong,Tagbongabong
+535,38,Curva,Curva
+536,38,Estanislao Morgado,Estanislao Morgado
+537,38,Jagupit,Jagupit
+538,38,La Paz,La Paz
+539,38,Pangaylan-IP,Pangaylan-IP
+540,38,Poblacion I,Poblacion I
+541,38,Poblacion II,Poblacion II
+542,38,San Isidro,San Isidro
+543,38,Tagbuyacan,Tagbuyacan
+544,39,Binuangan,Binuangan
+545,39,Cabayawa,Cabayawa
+546,39,Doña Rosario,Doña Rosario
+547,39,Doña Telesfora,Doña Telesfora
+548,39,La Fraternidad,La Fraternidad
+549,39,Lawigan,Lawigan
+550,39,Poblacion 1,Poblacion 1
+551,39,Poblacion 2,Poblacion 2
+552,39,Santa Ana,Santa Ana
+553,39,Tagmamarkay,Tagmamarkay
+554,39,Tagpangahoy,Tagpangahoy
+555,39,Tinigbasan,Tinigbasan
+556,39,Victory,Victory
+557,40,Berseba,Berseba
+558,40,Bucac,Bucac
+559,40,Cagbas,Cagbas
+560,40,Calaitan,Calaitan
+561,40,Canayugan,Canayugan
+562,40,Charito,Charito
+563,40,Claro Cortez,Claro Cortez
+564,40,Fili,Fili
+565,40,Gamao,Gamao
+566,40,Getsemane,Getsemane
+567,40,Grace Estate,Grace Estate
+568,40,Hamogaway,Hamogaway
+569,40,Katipunan,Katipunan
+570,40,Mabuhay,Mabuhay
+571,40,Magkiangkang,Magkiangkang
+572,40,Mahayag,Mahayag
+573,40,Marcelina,Marcelina
+574,40,Maygatasan,Maygatasan
+575,40,Montivesta,Montivesta
+576,40,Mt. Ararat,Mt. Ararat
+577,40,Mt. Carmel,Mt. Carmel
+578,40,Mt. Olive,Mt. Olive
+579,40,New Salem,New Salem
+580,40,Noli,Noli
+581,40,Osmeña,Osmeña
+582,40,Panaytay,Panaytay
+583,40,Pinagalaan,Pinagalaan
+584,40,Poblacion,Poblacion
+585,40,Sagmone,Sagmone
+586,40,Saguma,Saguma
+587,40,Salvacion,Salvacion
+588,40,San Agustin,San Agustin
+589,40,San Isidro,San Isidro
+590,40,San Juan,San Juan
+591,40,Santa Irene,Santa Irene
+592,40,Santa Teresita,Santa Teresita
+593,40,Santo Niño,Santo Niño
+594,40,Taglatawan,Taglatawan
+595,40,Taglibas,Taglibas
+596,40,Tagubay,Tagubay
+597,40,Verdu,Verdu
+598,40,Villa Ondayon,Villa Ondayon
+599,40,Wawa (Del Carmen),Wawa (Del Carmen)
+600,41,Bunawan Brook,Bunawan Brook
+601,41,Consuelo,Consuelo
+602,41,Imelda,Imelda
+603,41,Libertad,Libertad
+604,41,Mambalili,Mambalili
+605,41,Nueva Era,Nueva Era
+606,41,Poblacion,Poblacion
+607,41,San Andres,San Andres
+608,41,San Marcos,San Marcos
+609,41,San Teodoro,San Teodoro
+610,42,Agsabu,Agsabu
+611,42,Aguinaldo,Aguinaldo
+612,42,Anolingan,Anolingan
+613,42,Bakingking,Bakingking
+614,42,Balubo,Balubo
+615,42,Bentahon,Bentahon
+616,42,Bunaguit,Bunaguit
+617,42,Catmonon,Catmonon
+618,42,Cebulan,Cebulan
+619,42,Concordia,Concordia
+620,42,Crossing Luna,Crossing Luna
+621,42,Cubo,Cubo
+622,42,Dakutan,Dakutan
+623,42,Duangan,Duangan
+624,42,Guadalupe,Guadalupe
+625,42,Guibonon,Guibonon
+626,42,Hawilian,Hawilian
+627,42,Kalabuan,Kalabuan
+628,42,Kinamaybay,Kinamaybay
+629,42,Labao,Labao
+630,42,Langag,Langag
+631,42,Maasin,Maasin
+632,42,Mac-Arthur,Mac-Arthur
+633,42,Mahagcot,Mahagcot
+634,42,Maliwanag,Maliwanag
+635,42,Milagros,Milagros
+636,42,Nato,Nato
+637,42,New Gingoog,New Gingoog
+638,42,Odiong,Odiong
+639,42,Oro,Oro
+640,42,Piglawigan,Piglawigan
+641,42,Poblacion,Poblacion
+642,42,Remedios,Remedios
+643,42,Salug,Salug
+644,42,San Isidro,San Isidro
+645,42,San Jose,San Jose
+646,42,San Toribio,San Toribio
+647,42,San Vicente,San Vicente
+648,42,Santa Fe,Santa Fe
+649,42,Segunda,Segunda
+650,42,Sinakungan,Sinakungan
+651,42,Tagabase,Tagabase
+652,42,Taganahaw,Taganahaw
+653,42,Tagbalili,Tagbalili
+654,42,Tahina,Tahina
+655,42,Tandang Sora,Tandang Sora
+656,42,Valentina,Valentina
+657,43,Angeles,Angeles
+658,43,Bataan,Bataan
+659,43,Comota,Comota
+660,43,Halapitan,Halapitan
+661,43,Kasapa II,Kasapa II
+662,43,Langasian,Langasian
+663,43,Lydia,Lydia
+664,43,"Osmeña, Sr.","Osmeña, Sr."
+665,43,Panagangan,Panagangan
+666,43,Poblacion,Poblacion
+667,43,Sabang Adgawan,Sabang Adgawan
+668,43,Sagunto,Sagunto
+669,43,San Patricio,San Patricio
+670,43,Valentina,Valentina
+671,43,Villa Paz,Villa Paz
+672,44,Binucayan,Binucayan
+673,44,Johnson,Johnson
+674,44,Kasapa,Kasapa
+675,44,Katipunan,Katipunan
+676,44,Kauswagan,Kauswagan
+677,44,Magaud,Magaud
+678,44,Nueva Gracia,Nueva Gracia
+679,44,Poblacion,Poblacion
+680,44,Sabud,Sabud
+681,44,San Isidro,San Isidro
+682,44,San Mariano,San Mariano
+683,44,San Vicente,San Vicente
+684,44,Santa Teresa,Santa Teresa
+685,44,Santo Niño,Santo Niño
+686,44,Santo Tomas,Santo Tomas
+687,44,Violanta,Violanta
+688,44,Waloe,Waloe
+689,45,Aurora,Aurora
+690,45,Awa,Awa
+691,45,Azpetia,Azpetia
+692,45,La Caridad,La Caridad
+693,45,La Perian,La Perian
+694,45,La Purisima,La Purisima
+695,45,La Suerte,La Suerte
+696,45,La Union,La Union
+697,45,Las Navas,Las Navas
+698,45,Libertad,Libertad
+699,45,Los Arcos,Los Arcos
+700,45,Lucena,Lucena
+701,45,Mabuhay,Mabuhay
+702,45,Magsaysay,Magsaysay
+703,45,Mapaga,Mapaga
+704,45,Napo,Napo
+705,45,New Maug,New Maug
+706,45,Patin-ay,Patin-ay
+707,45,Poblacion (Bahbah),Poblacion (Bahbah)
+708,45,Salimbogaon,Salimbogaon
+709,45,Salvacion,Salvacion
+710,45,San Joaquin,San Joaquin
+711,45,San Jose,San Jose
+712,45,San Lorenzo,San Lorenzo
+713,45,San Martin,San Martin
+714,45,San Pedro,San Pedro
+715,45,San Rafael,San Rafael
+716,45,San Roque,San Roque
+717,45,San Salvador,San Salvador
+718,45,San Vicente,San Vicente
+719,45,Santa Irene,Santa Irene
+720,45,Santa Maria,Santa Maria
+721,46,Bayugan 3,Bayugan 3
+722,46,Cabantao,Cabantao
+723,46,Cabawan,Cabawan
+724,46,Libuac,Libuac
+725,46,Maligaya,Maligaya
+726,46,Marfil,Marfil
+727,46,Novele,Novele
+728,46,Poblacion,Poblacion
+729,46,Santa Cruz,Santa Cruz
+730,46,Tagbayagan,Tagbayagan
+731,46,Wasi-an,Wasi-an
+732,47,Alegria,Alegria
+733,47,Barangay 1 (Poblacion),Barangay 1 (Poblacion)
+734,47,Barangay 2 (Poblacion),Barangay 2 (Poblacion)
+735,47,Barangay 3 (Poblacion),Barangay 3 (Poblacion)
+736,47,Barangay 4 (Poblacion),Barangay 4 (Poblacion)
+737,47,Barangay 5 (Poblacion),Barangay 5 (Poblacion)
+738,47,Bayugan 2,Bayugan 2
+739,47,Bitan-agan,Bitan-agan
+740,47,Borbon,Borbon
+741,47,Buenasuerte,Buenasuerte
+742,47,Caimpugan,Caimpugan
+743,47,Das-agan,Das-agan
+744,47,Ebro,Ebro
+745,47,Hubang,Hubang
+746,47,Karaus,Karaus
+747,47,Ladgadan,Ladgadan
+748,47,Lapinigan,Lapinigan
+749,47,Lucac,Lucac
+750,47,Mate,Mate
+751,47,New Visayas,New Visayas
+752,47,Ormaca,Ormaca
+753,47,Pasta,Pasta
+754,47,Pisa-an,Pisa-an
+755,47,Rizal,Rizal
+756,47,San Isidro,San Isidro
+757,47,Santa Ana,Santa Ana
+758,47,Tagapua,Tagapua
+759,48,Anislagan,Anislagan
+760,48,Balit,Balit
+761,48,Baylo,Baylo
+762,48,Binicalan,Binicalan
+763,48,Cecilia,Cecilia
+764,48,Coalicion,Coalicion
+765,48,Culi,Culi
+766,48,Dimasalang,Dimasalang
+767,48,Don Alejandro,Don Alejandro
+768,48,Don Pedro,Don Pedro
+769,48,Doña Flavia,Doña Flavia
+770,48,Doña Maxima,Doña Maxima
+771,48,Mahagsay,Mahagsay
+772,48,Mahapag,Mahapag
+773,48,Mahayahay,Mahayahay
+774,48,Muritula,Muritula
+775,48,Nuevo Trabajo,Nuevo Trabajo
+776,48,Poblacion,Poblacion
+777,48,Policarpo,Policarpo
+778,48,San Isidro,San Isidro
+779,48,San Pedro,San Pedro
+780,48,Santa Ines,Santa Ines
+781,48,Santa Rita,Santa Rita
+782,48,Santiago,Santiago
+783,48,Wegguam,Wegguam
+784,49,Angas,Angas
+785,49,Aurora,Aurora
+786,49,Awao,Awao
+787,49,Concepcion,Concepcion
+788,49,Pag-asa,Pag-asa
+789,49,Patrocinio,Patrocinio
+790,49,Poblacion,Poblacion
+791,49,San Jose,San Jose
+792,49,Santa Isabel,Santa Isabel
+793,49,Sayon,Sayon
+794,49,Tapaz,Tapaz
+795,50,Afga,Afga
+796,50,Anahawan,Anahawan
+797,50,Banagbanag,Banagbanag
+798,50,Del Rosario,Del Rosario
+799,50,El Rio,El Rio
+800,50,Ilihan,Ilihan
+801,50,Kauswagan,Kauswagan
+802,50,Kioya,Kioya
+803,50,Kolambugan,Kolambugan
+804,50,Magkalape,Magkalape
+805,50,Magsaysay,Magsaysay
+806,50,Mahayahay,Mahayahay
+807,50,New Tubigon,New Tubigon
+808,50,Padiay,Padiay
+809,50,Perez,Perez
+810,50,Poblacion,Poblacion
+811,50,San Isidro,San Isidro
+812,50,San Vicente,San Vicente
+813,50,Santa Cruz,Santa Cruz
+814,50,Santa Maria,Santa Maria
+815,50,Sinai,Sinai
+816,50,Tabon-Tabon,Tabon-Tabon
+817,50,Tag-uyango,Tag-uyango
+818,50,Villangit,Villangit
+819,51,Balucan,Balucan
+820,51,BuenaGracia,BuenaGracia
+821,51,Causwagan,Causwagan
+822,51,Culi,Culi
+823,51,Del Monte,Del Monte
+824,51,Desamparados,Desamparados
+825,51,La Flora,La Flora
+826,51,Labnig,Labnig
+827,51,Maharlika,Maharlika
+828,51,Marbon,Marbon
+829,51,Sabang Gibung,Sabang Gibung
+830,51,San Agustin (Poblacion),San Agustin (Poblacion)
+831,51,San Isidro (Poblacion),San Isidro (Poblacion)
+832,51,San Nicolas (Poblacion),San Nicolas (Poblacion)
+833,51,Zamora,Zamora
+834,51,Zillovia,Zillovia
+835,52,Basa,Basa
+836,52,Cebolin,Cebolin
+837,52,Cuevas,Cuevas
+838,52,Kapatungan,Kapatungan
+839,52,Langkila-an,Langkila-an
+840,52,Manat,Manat
+841,52,New Visayas,New Visayas
+842,52,Pangyan,Pangyan
+843,52,Poblacion,Poblacion
+844,52,Pulang-lupa,Pulang-lupa
+845,52,Salvacion,Salvacion
+846,52,San Ignacio,San Ignacio
+847,52,San Isidro,San Isidro
+848,52,San Roque,San Roque
+849,52,Santa Maria,Santa Maria
+850,52,Tudela,Tudela
+851,53,Anitap,Anitap
+852,53,Bacay II,Bacay II
+853,53,Binongan,Binongan
+854,53,Caigangan,Caigangan
+855,53,Candiis,Candiis
+856,53,Del Monte,Del Monte
+857,53,Don Mateo,Don Mateo
+858,53,Katipunan,Katipunan
+859,53,La Fortuna,La Fortuna
+860,53,Limot,Limot
+861,53,Magsaysay,Magsaysay
+862,53,Masayan,Masayan
+863,53,Poblacion,Poblacion
+864,53,Sampaguita,Sampaguita
+865,53,San Gabriel,San Gabriel
+866,53,Santa Cruz,Santa Cruz
+867,53,Santa Emelia,Santa Emelia
+868,53,Sawagan,Sawagan
+869,53,Sinobong,Sinobong
+870,53,Sisimon,Sisimon
+871,54,Cabangila,Cabangila
+872,54,Cabugao,Cabugao
+873,54,Catmon,Catmon
+874,54,Dalipdip,Dalipdip
+875,54,Ginictan,Ginictan
+876,54,Linayasan,Linayasan
+877,54,Lumaynay,Lumaynay
+878,54,Lupo,Lupo
+879,54,Man-up,Man-up
+880,54,Odiong,Odiong
+881,54,Poblacion,Poblacion
+882,54,Quinasay-an,Quinasay-an
+883,54,Talon,Talon
+884,54,Tibiao,Tibiao
+885,55,Aranas,Aranas
+886,55,Arcangel,Arcangel
+887,55,Calizo,Calizo
+888,55,Cortes,Cortes
+889,55,Feliciano,Feliciano
+890,55,Fulgencio,Fulgencio
+891,55,Guanko,Guanko
+892,55,Morales,Morales
+893,55,Oquendo,Oquendo
+894,55,Poblacion,Poblacion
+895,56,Agbanawan,Agbanawan
+896,56,Bacan,Bacan
+897,56,Badiangan,Badiangan
+898,56,Cerrudo,Cerrudo
+899,56,Cupang,Cupang
+900,56,Daguitan,Daguitan
+901,56,Daja Norte,Daja Norte
+902,56,Daja Sur,Daja Sur
+903,56,Dingle,Dingle
+904,56,Jumarap,Jumarap
+905,56,Lapnag,Lapnag
+906,56,Libas,Libas
+907,56,Linabuan Sur,Linabuan Sur
+908,56,Mambog,Mambog
+909,56,Mangan,Mangan
+910,56,Muguing,Muguing
+911,56,Pagsanghan,Pagsanghan
+912,56,Palale,Palale
+913,56,Poblacion,Poblacion
+914,56,Polo,Polo
+915,56,Polocate,Polocate
+916,56,San Isidro,San Isidro
+917,56,Sibalew,Sibalew
+918,56,Sigcay,Sigcay
+919,56,Taba-ao,Taba-ao
+920,56,Tabayon,Tabayon
+921,56,Tinapuay,Tinapuay
+922,56,Torralba,Torralba
+923,56,Ugsod,Ugsod
+924,56,Venturanza,Venturanza
+925,57,Ambolong,Ambolong
+926,57,Angas,Angas
+927,57,Bay-ang,Bay-ang
+928,57,Cabugao,Cabugao
+929,57,Caiyang,Caiyang
+930,57,Camaligan,Camaligan
+931,57,Camanci,Camanci
+932,57,Ipil,Ipil
+933,57,Lalab,Lalab
+934,57,Lupit,Lupit
+935,57,Magpag-ong,Magpag-ong
+936,57,Magubahay,Magubahay
+937,57,Mambuquiao,Mambuquiao
+938,57,Man-up,Man-up
+939,57,Mandong,Mandong
+940,57,Napti,Napti
+941,57,Palay,Palay
+942,57,Poblacion,Poblacion
+943,57,Songcolan,Songcolan
+944,57,Tabon,Tabon
+945,58,Alegria,Alegria
+946,58,Bagongbayan,Bagongbayan
+947,58,Balusbos,Balusbos
+948,58,Bel-is,Bel-is
+949,58,Cabugan,Cabugan
+950,58,El Progreso,El Progreso
+951,58,Habana,Habana
+952,58,Katipunan,Katipunan
+953,58,Mayapay,Mayapay
+954,58,Nazareth,Nazareth
+955,58,Panilongan,Panilongan
+956,58,Poblacion,Poblacion
+957,58,Santander,Santander
+958,58,Tag-osip,Tag-osip
+959,58,Tigum,Tigum
+960,59,Agbago,Agbago
+961,59,Agdugayan,Agdugayan
+962,59,Antipolo,Antipolo
+963,59,Aparicio,Aparicio
+964,59,Aquino,Aquino
+965,59,Aslum,Aslum
+966,59,Bagacay,Bagacay
+967,59,Batuan,Batuan
+968,59,Buenavista,Buenavista
+969,59,Bugtongbato,Bugtongbato
+970,59,Cabugao,Cabugao
+971,59,Capilijan,Capilijan
+972,59,Colongcolong,Colongcolong
+973,59,Laguinbanua,Laguinbanua
+974,59,Mabusao,Mabusao
+975,59,Malindog,Malindog
+976,59,Maloco,Maloco
+977,59,Mina-a,Mina-a
+978,59,Monlaque,Monlaque
+979,59,Naile,Naile
+980,59,Naisud,Naisud
+981,59,Naligusan,Naligusan
+982,59,Ondoy,Ondoy
+983,59,Poblacion,Poblacion
+984,59,Polo,Polo
+985,59,Regador,Regador
+986,59,Rivera,Rivera
+987,59,Rizal,Rizal
+988,59,San Isidro,San Isidro
+989,59,San Jose,San Jose
+990,59,Santa Cruz,Santa Cruz
+991,59,Tagbaya,Tagbaya
+992,59,Tul-ang,Tul-ang
+993,59,Unat,Unat
+994,59,Yawan,Yawan
+995,60,Andagaw,Andagaw
+996,60,Bachaw Norte,Bachaw Norte
+997,60,Bachaw Sur,Bachaw Sur
+998,60,Briones,Briones
+999,60,Buswang New,Buswang New
+1000,60,Buswang Old,Buswang Old
+1001,60,Caano,Caano
+1002,60,Estancia,Estancia
+1003,60,Linabuan Norte,Linabuan Norte
+1004,60,Mabilo,Mabilo
+1005,60,Mobo,Mobo
+1006,60,Nalook,Nalook
+1007,60,Poblacion,Poblacion
+1008,60,Pook,Pook
+1009,60,Tigayon,Tigayon
+1010,60,Tinigaw,Tinigaw
+1011,61,Agcawilan,Agcawilan
+1012,61,Bagto,Bagto
+1013,61,Bugasongan,Bugasongan
+1014,61,Carugdog,Carugdog
+1015,61,Cogon,Cogon
+1016,61,Ibao,Ibao
+1017,61,Mina,Mina
+1018,61,Poblacion,Poblacion
+1019,61,Santa Cruz,Santa Cruz
+1020,61,Santa Cruz Bigaa,Santa Cruz Bigaa
+1021,61,Silakat-Nonok,Silakat-Nonok
+1022,61,Tayhawan,Tayhawan
+1023,62,Agmailig,Agmailig
+1024,62,Alfonso XII,Alfonso XII
+1025,62,Batobato,Batobato
+1026,62,Bonza,Bonza
+1027,62,Calacabian,Calacabian
+1028,62,Calamcan,Calamcan
+1029,62,Can-Awan,Can-Awan
+1030,62,Casit-an,Casit-an
+1031,62,Dalagsa-an,Dalagsa-an
+1032,62,Guadalupe,Guadalupe
+1033,62,Janlud,Janlud
+1034,62,Julita,Julita
+1035,62,Luctoga,Luctoga
+1036,62,Magugba,Magugba
+1037,62,Manika,Manika
+1038,62,Ogsip,Ogsip
+1039,62,Ortega,Ortega
+1040,62,Oyang,Oyang
+1041,62,Pampango,Pampango
+1042,62,Pinonoy,Pinonoy
+1043,62,Poblacion,Poblacion
+1044,62,Rivera,Rivera
+1045,62,Rosal,Rosal
+1046,62,Sibalew,Sibalew
+1047,63,Alaminos,Alaminos
+1048,63,Alas-as,Alas-as
+1049,63,Bacyang,Bacyang
+1050,63,Balactasan,Balactasan
+1051,63,Cabangahan,Cabangahan
+1052,63,Cabilawan,Cabilawan
+1053,63,Catabana,Catabana
+1054,63,Dit-Ana,Dit-Ana
+1055,63,Galicia,Galicia
+1056,63,Guinatu-an,Guinatu-an
+1057,63,Logohon,Logohon
+1058,63,Mamba,Mamba
+1059,63,Maria Cristina,Maria Cristina
+1060,63,Medina,Medina
+1061,63,Mercedes,Mercedes
+1062,63,Napnot,Napnot
+1063,63,Pang-itan,Pang-itan
+1064,63,Paningayan,Paningayan
+1065,63,Panipiason,Panipiason
+1066,63,Poblacion,Poblacion
+1067,63,San Jose,San Jose
+1068,63,Singay,Singay
+1069,63,Talangban,Talangban
+1070,63,Talimagao,Talimagao
+1071,63,Tigbawan,Tigbawan
+1072,64,Agbalogo,Agbalogo
+1073,64,Aglucay,Aglucay
+1074,64,Alibagon,Alibagon
+1075,64,Bagong Barrio,Bagong Barrio
+1076,64,Baybay,Baybay
+1077,64,Cabatanga,Cabatanga
+1078,64,Cajilo,Cajilo
+1079,64,Calangcang,Calangcang
+1080,64,Calimbajan,Calimbajan
+1081,64,Castillo,Castillo
+1082,64,Cayangwan,Cayangwan
+1083,64,Dumga,Dumga
+1084,64,Libang,Libang
+1085,64,Mantiguib,Mantiguib
+1086,64,Poblacion,Poblacion
+1087,64,Tibiawan,Tibiawan
+1088,64,Tina,Tina
+1089,64,Tugas,Tugas
+1090,65,Argao,Argao
+1091,65,Balabag,Balabag
+1092,65,Balusbus,Balusbus
+1093,65,Cabulihan,Cabulihan
+1094,65,Caticlan,Caticlan
+1095,65,Cogon,Cogon
+1096,65,Cubay Norte,Cubay Norte
+1097,65,Cubay Sur,Cubay Sur
+1098,65,Dumlog,Dumlog
+1099,65,Manoc-Manoc,Manoc-Manoc
+1100,65,Motag,Motag
+1101,65,Naasog,Naasog
+1102,65,Nabaoy,Nabaoy
+1103,65,Napaan,Napaan
+1104,65,Poblacion,Poblacion
+1105,65,Sambiray,Sambiray
+1106,65,Yapak,Yapak
+1107,66,Banaybanay,Banaybanay
+1108,66,Biga-a,Biga-a
+1109,66,Bulabud,Bulabud
+1110,66,Cabayugan,Cabayugan
+1111,66,Capataga,Capataga
+1112,66,Cogon,Cogon
+1113,66,Dangcalan,Dangcalan
+1114,66,Kinalangay Nuevo,Kinalangay Nuevo
+1115,66,Kinalangay Viejo,Kinalangay Viejo
+1116,66,Lilo-an,Lilo-an
+1117,66,Malandayon,Malandayon
+1118,66,Manhanip,Manhanip
+1119,66,Navitas,Navitas
+1120,66,Osman,Osman
+1121,66,Poblacion,Poblacion
+1122,66,Rosario,Rosario
+1123,66,San Dimas,San Dimas
+1124,66,San Ramon,San Ramon
+1125,66,San Roque,San Roque
+1126,66,Sipac,Sipac
+1127,66,Sugnod,Sugnod
+1128,66,Tambuan,Tambuan
+1129,66,Tigpalas,Tigpalas
+1130,67,Alimbo-Baybay,Alimbo-Baybay
+1131,67,Buenafortuna,Buenafortuna
+1132,67,Buenasuerte,Buenasuerte
+1133,67,Buenavista,Buenavista
+1134,67,Gibon,Gibon
+1135,67,Habana,Habana
+1136,67,Laserna,Laserna
+1137,67,Libertad,Libertad
+1138,67,Magallanes,Magallanes
+1139,67,Matabana,Matabana
+1140,67,Nagustan,Nagustan
+1141,67,Pawa,Pawa
+1142,67,Pinatuad,Pinatuad
+1143,67,Poblacion,Poblacion
+1144,67,Rizal,Rizal
+1145,67,Solido,Solido
+1146,67,Tagororoc,Tagororoc
+1147,67,Toledo,Toledo
+1148,67,Unidos,Unidos
+1149,67,Union,Union
+1150,68,Candelaria,Candelaria
+1151,68,Cawayan,Cawayan
+1152,68,Dumaguit,Dumaguit
+1153,68,Fatima,Fatima
+1154,68,Guinbaliwan,Guinbaliwan
+1155,68,Jalas,Jalas
+1156,68,Jugas,Jugas
+1157,68,Lawa-an,Lawa-an
+1158,68,Mabilo,Mabilo
+1159,68,Mataphao,Mataphao
+1160,68,Ochando,Ochando
+1161,68,Pinamuk-an,Pinamuk-an
+1162,68,Poblacion,Poblacion
+1163,68,Polo,Polo
+1164,68,Puis,Puis
+1165,68,Tambak,Tambak
+1166,69,Albasan,Albasan
+1167,69,Aliputos,Aliputos
+1168,69,Badio,Badio
+1169,69,Bubog,Bubog
+1170,69,Bulwang,Bulwang
+1171,69,Camanci Norte,Camanci Norte
+1172,69,Camanci Sur,Camanci Sur
+1173,69,Dongon East,Dongon East
+1174,69,Dongon West,Dongon West
+1175,69,Joyao-Joyao,Joyao-Joyao
+1176,69,Laguinbanua East,Laguinbanua East
+1177,69,Laguinbanua West,Laguinbanua West
+1178,69,Marianos,Marianos
+1179,69,Navitas,Navitas
+1180,69,Poblacion,Poblacion
+1181,69,Pusiw,Pusiw
+1182,69,Tabangka,Tabangka
+1183,70,Afga,Afga
+1184,70,Baybay,Baybay
+1185,70,Dapdap,Dapdap
+1186,70,Dumatad,Dumatad
+1187,70,Jawili,Jawili
+1188,70,Lanipga,Lanipga
+1189,70,Napatag,Napatag
+1190,70,Panayakan,Panayakan
+1191,70,Poblacion,Poblacion
+1192,70,Pudiot,Pudiot
+1193,70,Tagas,Tagas
+1194,70,Tamalagon,Tamalagon
+1195,70,Tamokoe,Tamokoe
+1196,70,Tondog,Tondog
+1197,70,Vivo,Vivo
+1198,71,Baclayon,Baclayon
+1199,71,Banao,Banao
+1200,71,Barangay 1 (Poblacion),Barangay 1 (Poblacion)
+1201,71,Barangay 2 (Poblacion),Barangay 2 (Poblacion)
+1202,71,Barangay 3 (Poblacion),Barangay 3 (Poblacion)
+1203,71,Barangay 4 (Poblacion),Barangay 4 (Poblacion)
+1204,71,Barangay 5 (Poblacion),Barangay 5 (Poblacion)
+1205,71,Barangay 6 (Poblacion),Barangay 6 (Poblacion)
+1206,71,Barangay 7 (Poblacion),Barangay 7 (Poblacion)
+1207,71,Barangay 8 (Poblacion),Barangay 8 (Poblacion)
+1208,71,Barangay 9 (Poblacion),Barangay 9 (Poblacion)
+1209,71,Barangay 10 (Poblacion),Barangay 10 (Poblacion)
+1210,71,Barangay 11 (Poblacion),Barangay 11 (Poblacion)
+1211,71,Barangay 12 (Poblacion),Barangay 12 (Poblacion)
+1212,71,Barangay 13 (Poblacion),Barangay 13 (Poblacion)
+1213,71,Barangay 14 (Poblacion),Barangay 14 (Poblacion)
+1214,71,Bariw,Bariw
+1215,71,Basud,Basud
+1216,71,Bayandong,Bayandong
+1217,71,Bonga (Upper),Bonga (Upper)
+1218,71,Buang,Buang
+1219,71,Busdac (San Jose),Busdac (San Jose)
+1220,71,Cabasan,Cabasan
+1221,71,Cagbulacao,Cagbulacao
+1222,71,Cagraray,Cagraray
+1223,71,Cajogutan,Cajogutan
+1224,71,Cawayan,Cawayan
+1225,71,Damacan,Damacan
+1226,71,Gubat Ilawod,Gubat Ilawod
+1227,71,Gubat Iraya,Gubat Iraya
+1228,71,Hindi,Hindi
+1229,71,Igang,Igang
+1230,71,Langaton,Langaton
+1231,71,Manaet,Manaet
+1232,71,Mapulang Daga,Mapulang Daga
+1233,71,Mataas,Mataas
+1234,71,Misibis,Misibis
+1235,71,Nahapunan,Nahapunan
+1236,71,Namanday,Namanday
+1237,71,Namantao,Namantao
+1238,71,Napao,Napao
+1239,71,Panarayon,Panarayon
+1240,71,Pigcobohan,Pigcobohan
+1241,71,Pili Ilawod,Pili Ilawod
+1242,71,Pili Iraya,Pili Iraya
+1243,71,Pongco (Lower Bonga),Pongco (Lower Bonga)
+1244,71,San Pablo,San Pablo
+1245,71,San Pedro,San Pedro
+1246,71,Sogod,Sogod
+1247,71,Sula,Sula
+1248,71,Tambilagao (Tambognon),Tambilagao (Tambognon)
+1249,71,Tambongon (Tambilagao),Tambongon (Tambilagao)
+1250,71,Tanagan,Tanagan
+1251,71,Uson,Uson
+1252,71,Vinisitahan-Basud (Mainland),Vinisitahan-Basud (Mainland)
+1253,71,Vinisitahan-Napao (Island),Vinisitahan-Napao (Island)
+1254,72,Anoling,Anoling
+1255,72,Baligang,Baligang
+1256,72,Bantonan,Bantonan
+1257,72,Barangay 1 (Poblacion),Barangay 1 (Poblacion)
+1258,72,Barangay 2 (Poblacion),Barangay 2 (Poblacion)
+1259,72,Barangay 3 (Poblacion),Barangay 3 (Poblacion)
+1260,72,Barangay 4 (Poblacion),Barangay 4 (Poblacion)
+1261,72,Barangay 5 (Poblacion),Barangay 5 (Poblacion)
+1262,72,Barangay 6 (Poblacion),Barangay 6 (Poblacion)
+1263,72,Barangay 7 (Poblacion),Barangay 7 (Poblacion)
+1264,72,Bariw,Bariw
+1265,72,Binanderahan,Binanderahan
+1266,72,Binitayan,Binitayan
+1267,72,Bongabong,Bongabong
+1268,72,Cabagñan,Cabagñan
+1269,72,Cabraran Pequeño,Cabraran Pequeño
+1270,72,Caguiba,Caguiba
+1271,72,Calabidongan,Calabidongan
+1272,72,Comun,Comun
+1273,72,Cotmon,Cotmon
+1274,72,Del Rosario,Del Rosario
+1275,72,Gapo,Gapo
+1276,72,Gotob,Gotob
+1277,72,Ilawod,Ilawod
+1278,72,Iluluan,Iluluan
+1279,72,Libod,Libod
+1280,72,Ligban,Ligban
+1281,72,Mabunga,Mabunga
+1282,72,Magogon,Magogon
+1283,72,Manawan,Manawan
+1284,72,Maninila,Maninila
+1285,72,Mina,Mina
+1286,72,Miti,Miti
+1287,72,Palanog,Palanog
+1288,72,Panoypoy,Panoypoy
+1289,72,Pariaan,Pariaan
+1290,72,Quinartilan,Quinartilan
+1291,72,Quirangay,Quirangay
+1292,72,Quitinday,Quitinday
+1293,72,Salugan,Salugan
+1294,72,Solong,Solong
+1295,72,Sua,Sua
+1296,72,Sumlang,Sumlang
+1297,72,Tagaytay,Tagaytay
+1298,72,Tagoytoy,Tagoytoy
+1299,72,Taladong,Taladong
+1300,72,Taloto,Taloto
+1301,72,Taplacon,Taplacon
+1302,72,Tinago,Tinago
+1303,72,Tumpa,Tumpa
+1304,73,Alcala,Alcala
+1305,73,Alobo,Alobo
+1306,73,Anislag,Anislag
+1307,73,Bagumbayan,Bagumbayan
+1308,73,Balinad,Balinad
+1309,73,Bañadero,Bañadero
+1310,73,Bañag,Bañag
+1311,73,Bascaran,Bascaran
+1312,73,Bigao,Bigao
+1313,73,Binitayan,Binitayan
+1314,73,Bongalon,Bongalon
+1315,73,Budiao,Budiao
+1316,73,Burgos,Burgos
+1317,73,Busay,Busay
+1318,73,Canarom,Canarom
+1319,73,Cullat,Cullat
+1320,73,de la Paz,de la Paz
+1321,73,Dinoronan,Dinoronan
+1322,73,Gabawan,Gabawan
+1323,73,Gapo,Gapo
+1324,73,Ibaugan,Ibaugan
+1325,73,Ilawod,Ilawod
+1326,73,Inarado,Inarado
+1327,73,Kidaco,Kidaco
+1328,73,Kilicao,Kilicao
+1329,73,Kimantong,Kimantong
+1330,73,Kinawitan,Kinawitan
+1331,73,Kiwalo,Kiwalo
+1332,73,Lacag,Lacag
+1333,73,Mabini,Mabini
+1334,73,Malabog,Malabog
+1335,73,Malobago,Malobago
+1336,73,Maopi,Maopi
+1337,73,Market Area,Market Area
+1338,73,Maroroy,Maroroy
+1339,73,Matnog,Matnog
+1340,73,Mayon,Mayon
+1341,73,Mi-isi,Mi-isi
+1342,73,Nabasan,Nabasan
+1343,73,Namantao,Namantao
+1344,73,Pandan,Pandan
+1345,73,Peñafrancia,Peñafrancia
+1346,73,Sagpon,Sagpon
+1347,73,Salvacion,Salvacion
+1348,73,San Rafael,San Rafael
+1349,73,San Ramon,San Ramon
+1350,73,San Roque,San Roque
+1351,73,San Vicente Grande,San Vicente Grande
+1352,73,San Vicente Pequeño,San Vicente Pequeño
+1353,73,Sipi,Sipi
+1354,73,Tabon-Tabon,Tabon-Tabon
+1355,73,Tagas,Tagas
+1356,73,Talahib,Talahib
+1357,73,Villahermosa,Villahermosa
+1358,74,Agpay,Agpay
+1359,74,Balite,Balite
+1360,74,Banao,Banao
+1361,74,Batbat,Batbat
+1362,74,Binogsacan Lower,Binogsacan Lower
+1363,74,Binogsacan Upper,Binogsacan Upper
+1364,74,Bololo,Bololo
+1365,74,Bubulusan,Bubulusan
+1366,74,Calzada,Calzada
+1367,74,Catomag,Catomag
+1368,74,Doña Mercedes,Doña Mercedes
+1369,74,Doña Tomasa (Magatol),Doña Tomasa (Magatol)
+1370,74,Ilawod,Ilawod
+1371,74,Inamnan Grande,Inamnan Grande
+1372,74,Inamnan Pequeño,Inamnan Pequeño
+1373,74,Inascan,Inascan
+1374,74,Iraya,Iraya
+1375,74,Lomacao,Lomacao
+1376,74,Maguiron,Maguiron
+1377,74,Maipon,Maipon
+1378,74,Malabnig,Malabnig
+1379,74,Malipo,Malipo
+1380,74,Malobago,Malobago
+1381,74,Maninila,Maninila
+1382,74,Mapaco,Mapaco
+1383,74,Marcial O. Rañola (Cabaloaon),Marcial O. Rañola (Cabaloaon)
+1384,74,Masarawag,Masarawag
+1385,74,Mauraro,Mauraro
+1386,74,Minto,Minto
+1387,74,Morera,Morera
+1388,74,Muladbucad Grande,Muladbucad Grande
+1389,74,Muladbucad Pequeño,Muladbucad Pequeño
+1390,74,Ongo,Ongo
+1391,74,Palanas,Palanas
+1392,74,Poblacion,Poblacion
+1393,74,Pood,Pood
+1394,74,Quibongbongan,Quibongbongan
+1395,74,Quitago,Quitago
+1396,74,San Francisco,San Francisco
+1397,74,San Jose (Ogsong),San Jose (Ogsong)
+1398,74,San Rafael,San Rafael
+1399,74,Sinungtan,Sinungtan
+1400,74,Tandarora,Tandarora
+1401,74,Travesia,Travesia
+1402,75,Aurora Poblacion (Barangay 6),Aurora Poblacion (Barangay 6)
+1403,75,Bagacay,Bagacay
+1404,75,Bautista,Bautista
+1405,75,Cabraran,Cabraran
+1406,75,Calzada Poblacion (Barangay 7),Calzada Poblacion (Barangay 7)
+1407,75,Del Rosario,Del Rosario
+1408,75,Estrella,Estrella
+1409,75,Florista,Florista
+1410,75,Mabini Poblacion (Barangay 2),Mabini Poblacion (Barangay 2)
+1411,75,Magsaysay Poblacion (Barangay 4),Magsaysay Poblacion (Barangay 4)
+1412,75,Mamlad,Mamlad
+1413,75,Maogog,Maogog
+1414,75,Mercado Poblacion (Barangay 5),Mercado Poblacion (Barangay 5)
+1415,75,Plaza Poblacion (Barangay 3),Plaza Poblacion (Barangay 3)
+1416,75,Quitinday Poblacion (Barangay 8),Quitinday Poblacion (Barangay 8)
+1417,75,Rizal Poblacion (Barangay 1),Rizal Poblacion (Barangay 1)
+1418,75,Salvacion,Salvacion
+1419,75,San Isidro,San Isidro
+1420,75,San Roque,San Roque
+1421,75,San Vicente,San Vicente
+1422,75,Sinagaran,Sinagaran
+1423,75,Villa Paz,Villa Paz
+1424,75,White Deer Poblacion (Barangay 9),White Deer Poblacion (Barangay 9)
+1425,76,Em's Barrio,Em's Barrio
+1426,76,Em's Barrio (South),Em's Barrio (South)
+1427,76,Em's Barrio (East),Em's Barrio (East)
+1428,76,Sagpon,Sagpon
+1429,76,Sagmin,Sagmin
+1430,76,Bañadero,Bañadero
+1431,76,Baño,Baño
+1432,76,Bagumbayan,Bagumbayan
+1433,76,Pinaric,Pinaric
+1434,76,Cabugao,Cabugao
+1435,76,Maoyod,Maoyod
+1436,76,Tula-Tula,Tula-Tula
+1437,76,Ilawod West Pob. (Ilawod 1),Ilawod West Pob. (Ilawod 1)
+1438,76,Ilawod Pob. (Ilawod 2),Ilawod Pob. (Ilawod 2)
+1439,76,Ilawod East Pob. (Ilawod 3),Ilawod East Pob. (Ilawod 3)
+1440,76,Kawit-East Washington Drive,Kawit-East Washington Drive
+1441,76,Rizal St. - Ilawod,Rizal St. - Ilawod
+1442,76,Cabañgan (West),Cabañgan (West)
+1443,76,Cabañgan,Cabañgan
+1444,76,Cabañgan (East),Cabañgan (East)
+1445,76,Binanuahan (West),Binanuahan (West)
+1446,76,Binanuahan (East),Binanuahan (East)
+1447,76,Imperial Court,Imperial Court
+1448,76,Rizal,Rizal
+1449,76,Lapu-Lapu,Lapu-Lapu
+1450,76,Dinagaan,Dinagaan
+1451,76,Victory Village (South),Victory Village (South)
+1452,76,Victory Village (North),Victory Village (North)
+1453,76,Sabang,Sabang
+1454,76,Pigcale,Pigcale
+1455,76,Centro Baybay,Centro Baybay
+1456,76,San Roque,San Roque
+1457,76,PNR - Peñaranda St. - Iraya,PNR - Peñaranda St. - Iraya
+1458,76,Oro Site - Magallanes St.,Oro Site - Magallanes St.
+1459,76,Tinago,Tinago
+1460,76,Kapantawan,Kapantawan
+1461,76,Bitano,Bitano
+1462,76,Gogon,Gogon
+1463,76,Bonot,Bonot
+1464,76,Cruzada,Cruzada
+1465,76,Bogtong,Bogtong
+1466,76,Rawis,Rawis
+1467,76,Tamaoyan,Tamaoyan
+1468,76,Pawa,Pawa
+1469,76,Dita,Dita
+1470,76,San Joaquin,San Joaquin
+1471,76,Arimbay,Arimbay
+1472,76,Bagong Abre,Bagong Abre
+1473,76,Bigaa,Bigaa
+1474,76,Padang,Padang
+1475,76,Buyuan,Buyuan
+1476,76,Matanag,Matanag
+1477,76,Bonga,Bonga
+1478,76,Mabinit,Mabinit
+1479,76,Estanza,Estanza
+1480,76,Taysan,Taysan
+1481,76,Dap-dap,Dap-dap
+1482,76,Buragwis,Buragwis
+1483,76,Puro,Puro
+1484,76,Lamba,Lamba
+1485,76,Maslog,Maslog
+1486,76,Homapon,Homapon
+1487,76,Mariawa,Mariawa
+1488,76,Bagacay,Bagacay
+1489,76,Imalnod,Imalnod
+1490,76,Banquerohan,Banquerohan
+1491,76,Bariis,Bariis
+1492,76,San Francisco,San Francisco
+1493,76,Buenavista,Buenavista
+1494,76,Cagbacong,Cagbacong
+1495,77,Alongong,Alongong
+1496,77,Apud,Apud
+1497,77,Bacolod,Bacolod
+1498,77,Bariw,Bariw
+1499,77,Bonbon,Bonbon
+1500,77,Buga,Buga
+1501,77,Bulusan,Bulusan
+1502,77,Burabod,Burabod
+1503,77,Caguscos,Caguscos
+1504,77,East Carisac,East Carisac
+1505,77,Harigue,Harigue
+1506,77,Libtong,Libtong
+1507,77,Linao,Linao
+1508,77,Mabayawas,Mabayawas
+1509,77,Macabugos,Macabugos
+1510,77,Magallang,Magallang
+1511,77,Malabiga,Malabiga
+1512,77,Marayag,Marayag
+1513,77,Matara,Matara
+1514,77,Molosbolos,Molosbolos
+1515,77,Natasan,Natasan
+1516,77,Niño Jesus (Santo Niño Jesus),Niño Jesus (Santo Niño Jesus)
+1517,77,Nogpo,Nogpo
+1518,77,Pantao,Pantao
+1519,77,Rawis,Rawis
+1520,77,Sagrada Familia,Sagrada Familia
+1521,77,Salvacion,Salvacion
+1522,77,Sampongan,Sampongan
+1523,77,San Agustin,San Agustin
+1524,77,San Antonio,San Antonio
+1525,77,San Isidro,San Isidro
+1526,77,San Jose,San Jose
+1527,77,San Pascual,San Pascual
+1528,77,San Ramon,San Ramon
+1529,77,San Vicente,San Vicente
+1530,77,Santa Cruz,Santa Cruz
+1531,77,Talin-Talin,Talin-Talin
+1532,77,Tambo,Tambo
+1533,77,Villa Petrona,Villa Petrona
+1534,77,West Carisac,West Carisac
+1535,77,Zone I (Poblacion),Zone I (Poblacion)
+1536,77,Zone II (Poblacion),Zone II (Poblacion)
+1537,77,Zone III (Poblacion),Zone III (Poblacion)
+1538,77,Zone IV (Poblacion),Zone IV (Poblacion)
+1539,77,Zone V (Poblacion),Zone V (Poblacion)
+1540,77,Zone VI (Poblacion),Zone VI (Poblacion)
+1541,77,Zone VII (Poblacion),Zone VII (Poblacion)
+1542,78,Abella,Abella
+1543,78,Allang,Allang
+1544,78,Amtic,Amtic
+1545,78,Bacong,Bacong
+1546,78,Bagumbayan (Pob.),Bagumbayan (Pob.)
+1547,78,Balanac,Balanac
+1548,78,Baligang,Baligang
+1549,78,Barayong,Barayong
+1550,78,Basag,Basag
+1551,78,Batang,Batang
+1552,78,Bay,Bay
+1553,78,Binanowan,Binanowan
+1554,78,Binatagan (Pob.),Binatagan (Pob.)
+1555,78,Bobonsuran,Bobonsuran
+1556,78,Bonga,Bonga
+1557,78,Busac,Busac
+1558,78,Busay,Busay
+1559,78,Cabarian,Cabarian
+1560,78,Calzada (Pob.),Calzada (Pob.)
+1561,78,Catburawan,Catburawan
+1562,78,Cavasi (Pob.),Cavasi (Pob.)
+1563,78,Culliat,Culliat
+1564,78,Dunao (Pob.),Dunao (Pob.)
+1565,78,Francia,Francia
+1566,78,Guilid (Pob.),Guilid (Pob.)
+1567,78,Herrera(Pob.),Herrera(Pob.)
+1568,78,Layon,Layon
+1569,78,Macalidong,Macalidong
+1570,78,Mahaba,Mahaba
+1571,78,Malama,Malama
+1572,78,Maonon,Maonon
+1573,78,Nasisi,Nasisi
+1574,78,Nabonton,Nabonton
+1575,78,Oma-Oma,Oma-Oma
+1576,78,Palapas,Palapas
+1577,78,Pandan,Pandan
+1578,78,Paulba,Paulba
+1579,78,Paulog,Paulog
+1580,78,Pinamaniquian,Pinamaniquian
+1581,78,Pinit,Pinit
+1582,78,Ranao-Ranao,Ranao-Ranao
+1583,78,San Vicente,San Vicente
+1584,78,Santa Cruz (Pob.),Santa Cruz (Pob.)
+1585,78,Tagpo (Pob.),Tagpo (Pob.)
+1586,78,Tambo,Tambo
+1587,78,Tandarora,Tandarora
+1588,78,Tastas,Tastas
+1589,78,Tinago (Pob.),Tinago (Pob.)
+1590,78,Tinampo,Tinampo
+1591,78,Tiongson,Tiongson
+1592,78,Tomolin (Pob.),Tomolin (Pob.)
+1593,78,Tuburan (Pob.),Tuburan (Pob.)
+1594,78,Tula-Tula Grande,Tula-Tula Grande
+1595,78,Tula-Tula Pequeño,Tula-Tula Pequeño
+1596,78,Tupas,Tupas
+1597,79,Barangay I (Poblacion),Barangay I (Poblacion)
+1598,79,Barangay II (Poblacion),Barangay II (Poblacion)
+1599,79,Barangay III (Poblacion),Barangay III (Poblacion)
+1600,79,Barangay IV (Poblacion),Barangay IV (Poblacion)
+1601,79,Barangay V (Poblacion),Barangay V (Poblacion)
+1602,79,Binitayan,Binitayan
+1603,79,Calbayog,Calbayog
+1604,79,Canaway,Canaway
+1605,79,Salvacion,Salvacion
+1606,79,San Antonio Santicon (Poblacion),San Antonio Santicon (Poblacion)
+1607,79,San Antonio Sulong,San Antonio Sulong
+1608,79,San Francisco,San Francisco
+1609,79,San Isidro Ilawod,San Isidro Ilawod
+1610,79,San Isidro Iraya,San Isidro Iraya
+1611,79,San Jose,San Jose
+1612,79,San Roque,San Roque
+1613,79,Santa Cruz,Santa Cruz
+1614,79,Santa Teresa,Santa Teresa
+1615,80,Awang,Awang
+1616,80,Bagatangki,Bagatangki
+1617,80,Bagumbayan,Bagumbayan
+1618,80,Balading,Balading
+1619,80,Balza,Balza
+1620,80,Bariw,Bariw
+1621,80,Baybay,Baybay
+1622,80,Bulang,Bulang
+1623,80,Burabod,Burabod
+1624,80,Cabunturan,Cabunturan
+1625,80,Comun,Comun
+1626,80,Diaro,Diaro
+1627,80,Estancia,Estancia
+1628,80,Jonop,Jonop
+1629,80,Labnig,Labnig
+1630,80,Libod,Libod
+1631,80,Malolos,Malolos
+1632,80,Matalipni,Matalipni
+1633,80,Ogob,Ogob
+1634,80,Pawa,Pawa
+1635,80,Payahan,Payahan
+1636,80,Poblacion,Poblacion
+1637,80,Quinarabasahan,Quinarabasahan
+1638,80,Santa Elena,Santa Elena
+1639,80,Soa,Soa
+1640,80,Sugcad,Sugcad
+1641,80,Tagoytoy,Tagoytoy
+1642,80,Tanawan,Tanawan
+1643,80,Tuliw,Tuliw
+1644,81,Balabagon,Balabagon
+1645,81,Balasbas,Balasbas
+1646,81,Bamban,Bamban
+1647,81,Buyo,Buyo
+1648,81,Cabacongan,Cabacongan
+1649,81,Cabit,Cabit
+1650,81,Cawayan,Cawayan
+1651,81,Cawit,Cawit
+1652,81,Holugan,Holugan
+1653,81,It-Ba (Poblacion),It-Ba (Poblacion)
+1654,81,Malobago,Malobago
+1655,81,Manumbalay,Manumbalay
+1656,81,Nagotgot,Nagotgot
+1657,81,Pawa,Pawa
+1658,81,Tinapian,Tinapian
+1659,82,Badbad,Badbad
+1660,82,Badian,Badian
+1661,82,Bagsa,Bagsa
+1662,82,Bagumbayan,Bagumbayan
+1663,82,Balogo,Balogo
+1664,82,Banao,Banao
+1665,82,Bangiawon,Bangiawon
+1666,82,Bogtong,Bogtong
+1667,82,Bongoran,Bongoran
+1668,82,Busac,Busac
+1669,82,Cadawag,Cadawag
+1670,82,Cagmanaba,Cagmanaba
+1671,82,Calaguimit,Calaguimit
+1672,82,Calpi,Calpi
+1673,82,Calzada,Calzada
+1674,82,Camagong,Camagong
+1675,82,Casinagan,Casinagan
+1676,82,Centro Poblacion,Centro Poblacion
+1677,82,Coliat,Coliat
+1678,82,Del Rosario,Del Rosario
+1679,82,Gumabao,Gumabao
+1680,82,Ilaor Norte,Ilaor Norte
+1681,82,Ilaor Sur,Ilaor Sur
+1682,82,Iraya Norte,Iraya Norte
+1683,82,Iraya Sur,Iraya Sur
+1684,82,Manga,Manga
+1685,82,Maporong,Maporong
+1686,82,Maramba,Maramba
+1687,82,Matambo,Matambo
+1688,82,Mayag,Mayag
+1689,82,Mayao,Mayao
+1690,82,Moroponros,Moroponros
+1691,82,Nagas,Nagas
+1692,82,Obaliw-Rinas,Obaliw-Rinas
+1693,82,Pistola,Pistola
+1694,82,Ramay,Ramay
+1695,82,Rizal,Rizal
+1696,82,Saban,Saban
+1697,82,San Agustin,San Agustin
+1698,82,San Antonio,San Antonio
+1699,82,San Isidro,San Isidro
+1700,82,San Jose,San Jose
+1701,82,San Juan,San Juan
+1702,82,San Miguel,San Miguel
+1703,82,San Pascual (Nale),San Pascual (Nale)
+1704,82,San Ramon,San Ramon
+1705,82,San Vicente (Suca),San Vicente (Suca)
+1706,82,Tablon,Tablon
+1707,82,Talisay,Talisay
+1708,82,Talongog,Talongog
+1709,82,Tapel,Tapel
+1710,82,Tobgon,Tobgon
+1711,82,Tobog,Tobog
+1712,83,Agol,Agol
+1713,83,Alabangpuro,Alabangpuro
+1714,83,Banawan (Binawan),Banawan (Binawan)
+1715,83,Barangay I (Poblacion),Barangay I (Poblacion)
+1716,83,Barangay II (Poblacion),Barangay II (Poblacion)
+1717,83,Barangay III (Poblacion),Barangay III (Poblacion)
+1718,83,Barangay IV (Poblacion),Barangay IV (Poblacion)
+1719,83,Barangay V (Poblacion),Barangay V (Poblacion)
+1720,83,Basicao Coastal,Basicao Coastal
+1721,83,Basicao Interior,Basicao Interior
+1722,83,Binodegahan,Binodegahan
+1723,83,Buenavista,Buenavista
+1724,83,Buyo,Buyo
+1725,83,Caratagan,Caratagan
+1726,83,Cuyaoyao,Cuyaoyao
+1727,83,Flores,Flores
+1728,83,La Medalla,La Medalla
+1729,83,Lawinon,Lawinon
+1730,83,Macasitas,Macasitas
+1731,83,Malapay,Malapay
+1732,83,Malidong,Malidong
+1733,83,Mamlad,Mamlad
+1734,83,Marigondon,Marigondon
+1735,83,Matanglad,Matanglad
+1736,83,Nablangbulod,Nablangbulod
+1737,83,Oringon,Oringon
+1738,83,Palapas,Palapas
+1739,83,Panganiran,Panganiran
+1740,83,Rawis,Rawis
+1741,83,Salvacion,Salvacion
+1742,83,Santo Cristo,Santo Cristo
+1743,83,Sukip,Sukip
+1744,83,Tibabo,Tibabo
+1745,84,Agos,Agos
+1746,84,Alnay,Alnay
+1747,84,Alomon,Alomon
+1748,84,Amoguis,Amoguis
+1749,84,Anopol,Anopol
+1750,84,Apad,Apad
+1751,84,Balaba,Balaba
+1752,84,Balangibang,Balangibang
+1753,84,Balinad,Balinad
+1754,84,Basud,Basud
+1755,84,Buyo,Buyo
+1756,84,Centro Occidental,Centro Occidental
+1757,84,Centro Oriental,Centro Oriental
+1758,84,Cepres,Cepres
+1759,84,Cotmon,Cotmon
+1760,84,Cotnogan,Cotnogan
+1761,84,Danao,Danao
+1762,84,Gabon,Gabon
+1763,84,Gamot,Gamot
+1764,84,Itaran,Itaran
+1765,84,Kinale,Kinale
+1766,84,Kinuartelan,Kinuartelan
+1767,84,La Medalla,La Medalla
+1768,84,Lanigay,Lanigay
+1769,84,La Purisima,La Purisima
+1770,84,Lidong,Lidong
+1771,84,Lourdes,Lourdes
+1772,84,Magpanambo,Magpanambo
+1773,84,Magurang,Magurang
+1774,84,Matacon,Matacon
+1775,84,Maynaga,Maynaga
+1776,84,Maysua,Maysua
+1777,84,Mendez,Mendez
+1778,84,Napo,Napo
+1779,84,Pinagdapugan,Pinagdapugan
+1780,84,Pintor (Binangbangan),Pintor (Binangbangan)
+1781,84,Ponso,Ponso
+1782,84,Salvacion,Salvacion
+1783,84,San Roque,San Roque
+1784,84,Santicon,Santicon
+1785,84,Santa Cruz,Santa Cruz
+1786,84,Santa Teresita,Santa Teresita
+1787,84,Sugcad,Sugcad
+1788,84,Ubaliw,Ubaliw
+1789,85,Bagaobawan,Bagaobawan
+1790,85,Batan,Batan
+1791,85,Bilbao,Bilbao
+1792,85,Binosawan,Binosawan
+1793,85,Bogtong,Bogtong
+1794,85,Buenavista,Buenavista
+1795,85,Buhatan,Buhatan
+1796,85,Calanaga,Calanaga
+1797,85,Caracaran,Caracaran
+1798,85,Carogcog,Carogcog
+1799,85,Dap-Dap,Dap-Dap
+1800,85,Gaba,Gaba
+1801,85,Galicia,Galicia
+1802,85,Guadalupe,Guadalupe
+1803,85,Hamorawon,Hamorawon
+1804,85,Lagundi,Lagundi
+1805,85,Liguan,Liguan
+1806,85,Linao,Linao
+1807,85,Malobago,Malobago
+1808,85,Mananao,Mananao
+1809,85,Mancao,Mancao
+1810,85,Manila,Manila
+1811,85,Masaga,Masaga
+1812,85,Morocborocan,Morocborocan
+1813,85,Nagcalsot,Nagcalsot
+1814,85,Pagcolbon,Pagcolbon
+1815,85,Poblacion,Poblacion
+1816,85,Sagrada,Sagrada
+1817,85,San Ramon,San Ramon
+1818,85,Santa Barbara,Santa Barbara
+1819,85,Tinocawan,Tinocawan
+1820,85,Tinopan,Tinopan
+1821,85,Viga,Viga
+1822,85,Villahermosa,Villahermosa
+1823,86,Alimsog,Alimsog
+1824,86,Bagong San Roque,Bagong San Roque
+1825,86,Buhatan,Buhatan
+1826,86,Calayucay,Calayucay
+1827,86,Del Rosario Poblacion (Barangay 3),Del Rosario Poblacion (Barangay 3)
+1828,86,Fidel Surtida,Fidel Surtida
+1829,86,Lidong,Lidong
+1830,86,Market Site Poblacion (Barangay 9),Market Site Poblacion (Barangay 9)
+1831,86,Nagsiya Poblacion (Barangay 8),Nagsiya Poblacion (Barangay 8)
+1832,86,Pandayan Poblacion (Barangay 10),Pandayan Poblacion (Barangay 10)
+1833,86,Salvacion,Salvacion
+1834,86,San Andres,San Andres
+1835,86,San Fernando,San Fernando
+1836,86,San Francisco Poblacion (Barangay 1),San Francisco Poblacion (Barangay 1)
+1837,86,San Isidro,San Isidro
+1838,86,San Juan Poblacion (Barangay 2),San Juan Poblacion (Barangay 2)
+1839,86,San Pedro Poblacion (Barangay 5),San Pedro Poblacion (Barangay 5)
+1840,86,San Rafael Poblacion (Barangay 7),San Rafael Poblacion (Barangay 7)
+1841,86,San Roque,San Roque
+1842,86,San Vicente Poblacion (Barangay 6),San Vicente Poblacion (Barangay 6)
+1843,86,Santa Misericordia,Santa Misericordia
+1844,86,Santo Domingo Poblacion (Barangay 4),Santo Domingo Poblacion (Barangay 4)
+1845,86,Santo Niño,Santo Niño
+1846,87,Agnas (San Miguel Island),Agnas (San Miguel Island)
+1847,87,Bacolod,Bacolod
+1848,87,Bangkilingan,Bangkilingan
+1849,87,Bantayan,Bantayan
+1850,87,Baranghawon,Baranghawon
+1851,87,Basagan,Basagan
+1852,87,Basud (Pob.),Basud (Pob.)
+1853,87,Bogñabong,Bogñabong
+1854,87,Bombon (Pob.),Bombon (Pob.)
+1855,87,Bonot,Bonot
+1856,87,San Isidro,San Isidro
+1857,87,Buang,Buang
+1858,87,Buhian,Buhian
+1859,87,Cabagñan,Cabagñan
+1860,87,Cobo,Cobo
+1861,87,Comon,Comon
+1862,87,Cormidal,Cormidal
+1863,87,Divino Rostro (Pob.),Divino Rostro (Pob.)
+1864,87,Fatima,Fatima
+1865,87,Guinobat,Guinobat
+1866,87,Hacienda,Hacienda
+1867,87,Magapo,Magapo
+1868,87,Mariroc,Mariroc
+1869,87,Matagbac,Matagbac
+1870,87,Oras,Oras
+1871,87,Oson,Oson
+1872,87,Panal,Panal
+1873,87,Pawa,Pawa
+1874,87,Pinagbobong,Pinagbobong
+1875,87,Quinale Cabasan (Pob.),Quinale Cabasan (Pob.)
+1876,87,Quinastillojan,Quinastillojan
+1877,87,Rawis (San Miguel Island),Rawis (San Miguel Island)
+1878,87,Sagurong (San Miguel Island),Sagurong (San Miguel Island)
+1879,87,Salvacion,Salvacion
+1880,87,San Antonio,San Antonio
+1881,87,San Carlos,San Carlos
+1882,87,San Juan (Pob.),San Juan (Pob.)
+1883,87,San Lorenzo,San Lorenzo
+1884,87,San Ramon,San Ramon
+1885,87,San Roque,San Roque
+1886,87,San Vicente,San Vicente
+1887,87,Santo Cristo (Pob.),Santo Cristo (Pob.)
+1888,87,Sua-Igot,Sua-Igot
+1889,87,Tabiguian,Tabiguian
+1890,87,Tagas,Tagas
+1891,87,Tayhi (Pob.),Tayhi (Pob.)
+1892,87,Visita (San Miguel Island),Visita (San Miguel Island)
+1893,88,Bagumbayan,Bagumbayan
+1894,88,Bariis,Bariis
+1895,88,Baybay,Baybay
+1896,88,Belen (Malabog),Belen (Malabog)
+1897,88,Biyong,Biyong
+1898,88,Bolo,Bolo
+1899,88,Cale,Cale
+1900,88,Cararayan,Cararayan
+1901,88,Coro-coro,Coro-coro
+1902,88,Dap-dap,Dap-dap
+1903,88,Gajo,Gajo
+1904,88,Joroan,Joroan
+1905,88,Libjo,Libjo
+1906,88,Libtong,Libtong
+1907,88,Matalibong,Matalibong
+1908,88,Maynonong,Maynonong
+1909,88,Mayong,Mayong
+1910,88,Misibis,Misibis
+1911,88,Naga,Naga
+1912,88,Nagas,Nagas
+1913,88,Oyama,Oyama
+1914,88,Putsan,Putsan
+1915,88,San Bernardo,San Bernardo
+1916,88,Sogod,Sogod
+1917,88,Tigbi (Poblacion),Tigbi (Poblacion)
+1918,89,Bayo Grande,Bayo Grande
+1919,89,Bayo Pequeño,Bayo Pequeño
+1920,89,Butuan,Butuan
+1921,89,Casay,Casay
+1922,89,Casay Viejo,Casay Viejo
+1923,89,Iba,Iba
+1924,89,Igbarabatuan,Igbarabatuan
+1925,89,Igpalge,Igpalge
+1926,89,Igtumarom,Igtumarom
+1927,89,Lisub A,Lisub A
+1928,89,Lisub B,Lisub B
+1929,89,Mabuyong,Mabuyong
+1930,89,Magdalena,Magdalena
+1931,89,Nasuli C,Nasuli C
+1932,89,Nato,Nato
+1933,89,Poblacion,Poblacion
+1934,89,Sagua,Sagua
+1935,89,Salvacion,Salvacion
+1936,89,San Francisco,San Francisco
+1937,89,San Ramon,San Ramon
+1938,89,San Roque,San Roque
+1939,89,Tagaytay,Tagaytay
+1940,89,Talisayan,Talisayan
+1941,90,Baghari,Baghari
+1942,90,Bahuyan,Bahuyan
+1943,90,Beri,Beri
+1944,90,Biga-a,Biga-a
+1945,90,Binangbang,Binangbang
+1946,90,Binangbang Centro,Binangbang Centro
+1947,90,Binanu-an,Binanu-an
+1948,90,Cadiao,Cadiao
+1949,90,Calapadan,Calapadan
+1950,90,Capoyuan,Capoyuan
+1951,90,Cubay,Cubay
+1952,90,Embrangga-an,Embrangga-an
+1953,90,Esparar,Esparar
+1954,90,Gua,Gua
+1955,90,Idao,Idao
+1956,90,Igpalge,Igpalge
+1957,90,Igtunarum,Igtunarum
+1958,90,Integasan,Integasan
+1959,90,Ipil,Ipil
+1960,90,Jinalinan,Jinalinan
+1961,90,Lanas,Lanas
+1962,90,Langcaon (Evelio Javier),Langcaon (Evelio Javier)
+1963,90,Lisub,Lisub
+1964,90,Lombuyan,Lombuyan
+1965,90,Mablad,Mablad
+1966,90,Magtulis,Magtulis
+1967,90,Marigne,Marigne
+1968,90,Mayabay,Mayabay
+1969,90,Mayos,Mayos
+1970,90,Nalusdan,Nalusdan
+1971,90,Narirong,Narirong
+1972,90,Palma,Palma
+1973,90,Poblacion,Poblacion
+1974,90,San Antonio,San Antonio
+1975,90,San Ramon,San Ramon
+1976,90,Soligao,Soligao
+1977,90,Tabongtabong,Tabongtabong
+1978,90,Tig-Alaran,Tig-Alaran
+1979,90,Yapo,Yapo
+1980,91,Borocboroc,Borocboroc
+1981,91,Buenavista,Buenavista
+1982,91,Concepcion,Concepcion
+1983,91,Delima,Delima
+1984,91,Ipil,Ipil
+1985,91,Maradiona,Maradiona
+1986,91,Mojon,Mojon
+1987,91,Poblacion,Poblacion
+1988,91,Rombang,Rombang
+1989,91,Salvacion,Salvacion
+1990,91,Sinaja,Sinaja
+1991,92,Anilawan,Anilawan
+1992,92,Arangote,Arangote
+1993,92,Bagtason,Bagtason
+1994,92,Camangahan,Camangahan
+1995,92,Centro Ilawod (Poblacion),Centro Ilawod (Poblacion)
+1996,92,Centro Ilaya (Poblacion),Centro Ilaya (Poblacion)
+1997,92,Centro Pojo (Poblacion),Centro Pojo (Poblacion)
+1998,92,Cubay North,Cubay North
+1999,92,Cubay South,Cubay South
+2000,92,Guija,Guija
+2001,92,Igbalangao,Igbalangao
+2002,92,Igsoro,Igsoro
+2003,92,Ilaures,Ilaures
+2004,92,Jinalinan,Jinalinan
+2005,92,Lacayon,Lacayon
+2006,92,Maray,Maray
+2007,92,Paliwan,Paliwan
+2008,92,Pangalcagan,Pangalcagan
+2009,92,Sabang East,Sabang East
+2010,92,Sabang West,Sabang West
+2011,92,Tagudtud North,Tagudtud North
+2012,92,Tagudtud South,Tagudtud South
+2013,92,Talisay,Talisay
+2014,92,Tica,Tica
+2015,92,Tono-an,Tono-an
+2016,92,Yapu,Yapu
+2017,92,Zaragoza,Zaragoza
+2018,93,Alegria,Alegria
+2019,93,Bacong,Bacong
+2020,93,Banago,Banago
+2021,93,Bonbon,Bonbon
+2022,93,Dawis,Dawis
+2023,93,Dionela,Dionela
+2024,93,Harigue,Harigue
+2025,93,Hininga-an,Hininga-an
+2026,93,Imba,Imba
+2027,93,Masanag,Masanag
+2028,93,Poblacion,Poblacion
+2029,93,Sabang,Sabang
+2030,93,Salamento,Salamento
+2031,93,Semirara,Semirara
+2032,93,Sibato,Sibato
+2033,93,Sibay,Sibay
+2034,93,Sibolo,Sibolo
+2035,93,Tinogboc,Tinogboc
+2036,94,Alojipan,Alojipan
+2037,94,Bagacay,Bagacay
+2038,94,Balac-balac,Balac-balac
+2039,94,Batbatan Island,Batbatan Island
+2040,94,Batonan Norte,Batonan Norte
+2041,94,Batonan Sur,Batonan Sur
+2042,94,Bita,Bita
+2043,94,Bitadton Norte,Bitadton Norte
+2044,94,Bitadton Sur,Bitadton Sur
+2045,94,Buenavista,Buenavista
+2046,94,Buhi,Buhi
+2047,94,Camancijan,Camancijan
+2048,94,Caridad,Caridad
+2049,94,Carit-an,Carit-an
+2050,94,Centro Norte (Poblacion),Centro Norte (Poblacion)
+2051,94,Centro Poblacion,Centro Poblacion
+2052,94,Centro Sur (Poblacion),Centro Sur (Poblacion)
+2053,94,Condes,Condes
+2054,94,Esperanza,Esperanza
+2055,94,Fe,Fe
+2056,94,Flores,Flores
+2057,94,Jalandoni,Jalandoni
+2058,94,Janlagasi,Janlagasi
+2059,94,Lamputong,Lamputong
+2060,94,Lipata,Lipata
+2061,94,Magsaysay (Balua),Magsaysay (Balua)
+2062,94,Malacañang,Malacañang
+2063,94,Malalison Island,Malalison Island
+2064,94,Maniguin,Maniguin
+2065,94,Naba,Naba
+2066,94,Osorio,Osorio
+2067,94,Paningayan,Paningayan
+2068,94,Salde,Salde
+2069,94,San Antonio,San Antonio
+2070,94,San Gregorio,San Gregorio
+2071,94,San Juan,San Juan
+2072,94,San Luis,San Luis
+2073,94,San Pascual,San Pascual
+2074,94,San Vicente,San Vicente
+2075,94,Simbola,Simbola
+2076,94,Tigbobolo,Tigbobolo
+2077,94,Tinabusan,Tinabusan
+2078,94,Tomao,Tomao
+2079,94,Valderama,Valderama
+2080,95,Apdo,Apdo
+2081,95,Asluman,Asluman
+2082,95,Banawon,Banawon
+2083,95,Bia-an,Bia-an
+2084,95,Bongbongan I-II,Bongbongan I-II
+2085,95,Bongbongan III,Bongbongan III
+2086,95,Botbot,Botbot
+2087,95,Budbudan,Budbudan
+2088,95,Buhang,Buhang
+2089,95,Calacja I,Calacja I
+2090,95,Calacja II,Calacja II
+2091,95,Calala,Calala
+2092,95,Cantulan,Cantulan
+2093,95,Caridad,Caridad
+2094,95,Caromangay,Caromangay
+2095,95,Casalngan,Casalngan
+2096,95,Dangcalan,Dangcalan
+2097,95,Del Pilar,Del Pilar
+2098,95,Fabrica,Fabrica
+2099,95,Funda,Funda
+2100,95,General Fullon (Tina),General Fullon (Tina)
+2101,95,Gov. Evelio B. Javier (Lanag),Gov. Evelio B. Javier (Lanag)
+2102,95,Guintas,Guintas
+2103,95,Igbical,Igbical
+2104,95,Igbucagay,Igbucagay
+2105,95,Inabasan,Inabasan
+2106,95,Ingwan-Batangan,Ingwan-Batangan
+2107,95,La Paz,La Paz
+2108,95,Linaban,Linaban
+2109,95,Malandog,Malandog
+2110,95,Mapatag,Mapatag
+2111,95,Masanag,Masanag
+2112,95,Nalihawan,Nalihawan
+2113,95,Pamandayan (Botbot),Pamandayan (Botbot)
+2114,95,Pasu-Jungao,Pasu-Jungao
+2115,95,Piape I,Piape I
+2116,95,Piape II,Piape II
+2117,95,Piape III,Piape III
+2118,95,"Pili 1, 2, 3","Pili 1, 2, 3"
+2119,95,Poblacion 1,Poblacion 1
+2120,95,Poblacion 2,Poblacion 2
+2121,95,Poblacion 3,Poblacion 3
+2122,95,Poblacion 4,Poblacion 4
+2123,95,Poblacion 5,Poblacion 5
+2124,95,Pu-ao,Pu-ao
+2125,95,Suloc,Suloc
+2126,95,Villavert-Jimenez,Villavert-Jimenez
+2127,96,Bagongbayan,Bagongbayan
+2128,96,Banban,Banban
+2129,96,Bongbongan,Bongbongan
+2130,96,Cabariwan,Cabariwan
+2131,96,Cadajug,Cadajug
+2132,96,Canituan,Canituan
+2133,96,Capnayan,Capnayan
+2134,96,Casit-an,Casit-an
+2135,96,Guiamon,Guiamon
+2136,96,Guinbanga-an,Guinbanga-an
+2137,96,Guisijan,Guisijan
+2138,96,Igtadiao,Igtadiao
+2139,96,Intao,Intao
+2140,96,Jaguikican,Jaguikican
+2141,96,Jinalinan,Jinalinan
+2142,96,Lactudan,Lactudan
+2143,96,Latazon,Latazon
+2144,96,Laua-an,Laua-an
+2145,96,Liberato,Liberato
+2146,96,Lindero,Lindero
+2147,96,Liya-liya,Liya-liya
+2148,96,Loon,Loon
+2149,96,Lugta,Lugta
+2150,96,Lupa-an,Lupa-an
+2151,96,Magyapo,Magyapo
+2152,96,Maria,Maria
+2153,96,Mauno,Mauno
+2154,96,Maybunga,Maybunga
+2155,96,Necesito (Paniatan),Necesito (Paniatan)
+2156,96,Oloc,Oloc
+2157,96,Omlot,Omlot
+2158,96,Pandanan,Pandanan
+2159,96,Paningayan,Paningayan
+2160,96,Pascuala,Pascuala
+2161,96,Poblacion (Centro),Poblacion (Centro)
+2162,96,San Ramon,San Ramon
+2163,96,Santiago,Santiago
+2164,96,Tibacan,Tibacan
+2165,96,Tigunhao,Tigunhao
+2166,96,Virginia,Virginia
+2167,97,Barusbus,Barusbus
+2168,97,Bulanao,Bulanao
+2169,97,Centro Este (Poblacion),Centro Este (Poblacion)
+2170,97,Centro Weste (Poblacion),Centro Weste (Poblacion)
+2171,97,Codiong,Codiong
+2172,97,Cubay,Cubay
+2173,97,Igcagay,Igcagay
+2174,97,Inyawan,Inyawan
+2175,97,Lindero,Lindero
+2176,97,Maramig,Maramig
+2177,97,Pajo,Pajo
+2178,97,Panangkilon,Panangkilon
+2179,97,Paz,Paz
+2180,97,Pucio,Pucio
+2181,97,San Roque,San Roque
+2182,97,Taboc,Taboc
+2183,97,Tinigbas,Tinigbas
+2184,97,Tinindugan,Tinindugan
+2185,97,Union,Union
+2186,98,Aracay,Aracay
+2187,98,Badiangan,Badiangan
+2188,98,Bagumbayan,Bagumbayan
+2189,98,Baybay,Baybay
+2190,98,Botbot,Botbot
+2191,98,Buang,Buang
+2192,98,Cabugao,Cabugao
+2193,98,Candari,Candari
+2194,98,Carmen,Carmen
+2195,98,Centro Norte (Poblacion),Centro Norte (Poblacion)
+2196,98,Centro Sur (Poblacion),Centro Sur (Poblacion)
+2197,98,Dionela,Dionela
+2198,98,Dumrog,Dumrog
+2199,98,Duyong,Duyong
+2200,98,Fragante,Fragante
+2201,98,Guia,Guia
+2202,98,Idiacacan,Idiacacan
+2203,98,Jinalinan,Jinalinan
+2204,98,Luhod-Bayang,Luhod-Bayang
+2205,98,Maadios,Maadios
+2206,98,Mag-aba,Mag-aba
+2207,98,Napuid,Napuid
+2208,98,Nauring,Nauring
+2209,98,Patria,Patria
+2210,98,Perfecta,Perfecta
+2211,98,San Andres,San Andres
+2212,98,San Joaquin,San Joaquin
+2213,98,Santa Ana,Santa Ana
+2214,98,Santa Cruz,Santa Cruz
+2215,98,Santa Fe,Santa Fe
+2216,98,Santo Rosario,Santo Rosario
+2217,98,Talisay,Talisay
+2218,98,Tingib,Tingib
+2219,98,Zaldivar,Zaldivar
+2220,99,Alvañiz,Alvañiz
+2221,99,Amparo,Amparo
+2222,99,Apgahan,Apgahan
+2223,99,Aureliana,Aureliana
+2224,99,Badiangan,Badiangan
+2225,99,Bernaldo A. Julagting (Bitas),Bernaldo A. Julagting (Bitas)
+2226,99,Carit-an,Carit-an
+2227,99,Cuyapiao,Cuyapiao
+2228,99,Gella,Gella
+2229,99,Igbarawan,Igbarawan
+2230,99,Igbobon,Igbobon
+2231,99,Igburi,Igburi
+2232,99,La Rioja,La Rioja
+2233,99,Mabasa,Mabasa
+2234,99,Macarina,Macarina
+2235,99,Magarang,Magarang
+2236,99,Magsaysay,Magsaysay
+2237,99,Padang,Padang
+2238,99,Pandanan,Pandanan
+2239,99,Patlabawon,Patlabawon
+2240,99,Poblacion,Poblacion
+2241,99,Quezon,Quezon
+2242,99,Salaguiawan,Salaguiawan
+2243,99,Samalague,Samalague
+2244,99,San Rafael,San Rafael
+2245,99,Tamayoc,Tamayoc
+2246,99,Tigbalogo,Tigbalogo
+2247,99,Tobias Fornier,Tobias Fornier
+2248,99,Villa Crespo,Villa Crespo
+2249,99,Villa Cruz,Villa Cruz
+2250,99,Villa Elio,Villa Elio
+2251,99,Villa Flores,Villa Flores
+2252,99,Villa Laua-an,Villa Laua-an
+2253,99,Villa Sal,Villa Sal
+2254,99,Villa Salomon,Villa Salomon
+2255,99,Vista Alegre,Vista Alegre
+2256,100,Atabay,Atabay
+2257,100,Badiang,Badiang
+2258,100,Barangay 1 (Poblacion),Barangay 1 (Poblacion)
+2259,100,Barangay 2 (Poblacion),Barangay 2 (Poblacion)
+2260,100,Barangay 3 (Poblacion),Barangay 3 (Poblacion)
+2261,100,Barangay 4 (Poblacion),Barangay 4 (Poblacion)
+2262,100,Barangay 5 (Poblacion),Barangay 5 (Poblacion)
+2263,100,Barangay 6 (Poblacion),Barangay 6 (Poblacion)
+2264,100,Barangay 7 (Poblacion),Barangay 7 (Poblacion)
+2265,100,Barangay 8 (Poblacion),Barangay 8 (Poblacion)
+2266,100,Bariri,Bariri
+2267,100,Bugarot (Catungan-Bugarot),Bugarot (Catungan-Bugarot)
+2268,100,Cansadan (Cansadan-Tubudan),Cansadan (Cansadan-Tubudan)
+2269,100,Durog,Durog
+2270,100,Funda-Dalipe,Funda-Dalipe
+2271,100,Igbonglo,Igbonglo
+2272,100,Inabasan,Inabasan
+2273,100,Madrangca,Madrangca
+2274,100,Magcalon,Magcalon
+2275,100,Malaiba,Malaiba
+2276,100,Maybato Norte,Maybato Norte
+2277,100,Maybato Sur,Maybato Sur
+2278,100,Mojon,Mojon
+2279,100,Pantao,Pantao
+2280,100,San Angel,San Angel
+2281,100,San Fernando,San Fernando
+2282,100,San Pedro,San Pedro
+2283,100,Supa,Supa

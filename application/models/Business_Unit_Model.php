@@ -50,7 +50,11 @@ class Business_Unit_Model extends CI_Model {
             );
         }
 
-        return call_user_func_array('array_merge', $arr);
+        $array = array();
+        foreach($arr as $arrs)
+            foreach($arrs as $key => $val)
+                $array[$key] = $val;
+        return $array;
     }
 
     public function form_selected_options($id)
@@ -75,6 +79,47 @@ class Business_Unit_Model extends CI_Model {
         }
     }
 
+    public function form_select_attributes_jo($data)
+    {
+        $attributes = array(
+            'name'          => $data,
+            'id'            => $data,
+            'class'         => 'selectpicker',
+            'disabled'      => 'disabled',
+            'data-live-search'  => 'true'
+        );
+
+        return $attributes;
+    }
+
+    public function form_selected_jo_options($id)
+    {   
+        if(isset($id) && !empty($id))
+        {   
+            $job_id = $this->Job_Order_Model->find_job_id_by_job_no($id);
+        
+            $this->db->select('*');
+            $this->db->from($this->business_unitTable.' as bus');
+            $this->db->join('customer as cus','bus.business_unit_id = cus.business_unit_id');
+            $this->db->join('job_order as job','cus.customer_id = job.customer_id');    
+            $this->db->where('job.job_order_id',$job_id);
+            $query = $this->db->get();
+
+            if($query->num_rows() > 0)
+            {
+                foreach ($query->result() as $row) {
+                    $id = $row->department_id;
+                }
+
+                return $id;
+            }
+            else 
+            {
+                return $id = '0';
+            }
+        }
+    }
+
     public function get_business_unit_name($id)
     {
         $this->db->where($this->business_unitColumn, $id);
@@ -86,6 +131,5 @@ class Business_Unit_Model extends CI_Model {
         }
         return $id;  
     }
-
            
 }

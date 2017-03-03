@@ -13,6 +13,7 @@
     background: url(../img/bg-pattern.png), linear-gradient(to left,#7b4397,#dc2430)  !important;
 }
 
+
 [data-ma-header="teal"] .smm-alerts > li.active, 
 [data-ma-header="teal"] .main-menu li.active > a {
 	color: #dc2430;
@@ -38,6 +39,16 @@
 	color: rgba(255,255,255, 0.5);
 }
 
+.timepicker-picker table tbody tr + tr:not(:last-child) {
+  background: #dc2430;
+  color: #fff;
+}
+
+.timepicker-picker .btn,
+.timepicker-picker .btn:hover {
+  color: #dc2430 !important;
+}
+
 .datepicker table thead tr:first-child th {
 	background: #dc2430;
 }
@@ -52,6 +63,10 @@
 
 .datepicker table td.active:before {
 	background-color: #dc2430;
+}
+
+.transformY {
+	transform: rotateY(180deg);
 }
 
 .sweet-alert {
@@ -89,6 +104,10 @@
 	background: rgba(255, 255, 255, 0.25);
 }
 
+.modal .btn-link {
+	min-width: 113.28px; 
+}
+
 /*---------------------------------
     Content
 ----------------------------------*/
@@ -121,12 +140,56 @@ body.toggled #main {
     transform: rotate(0deg);
 }
 
+.font-13 {
+	font-size: 13px !important;
+}
+
 .p-b-15 {
 	padding-bottom: 15px !important;
 }
 
-.theme-color {
+.l-block {
+	background: transparent;
+}
+
+.lb-lead {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.lb-body {
+	background: #fff;
+}
+
+.login .text-normal {
+	color: #959595;
+	margin-top: 5px;
+}
+
+.login .btn {
+	width: 50%;
+}
+
+.login .title {
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 62px;
+	margin-top: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.theme-color,
+.theme-color-1 {
 	color: #dc2430 !important;
+}
+
+.theme-color-2 {
+	color: #7b4397 !important;
+}
+
+span.char3,
+span.char4 {
+	color: #7b4397 !important;
 }
 
 .theme-bg-dark {
@@ -153,14 +216,35 @@ body.toggled #main {
 	margin-right: -5px !important;
 }
 
-
 .btn-float {
 	z-index: 999;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.show-password {
+	color: #dc2430 !important;
 }
 
 .d-btn {
     bottom: 100px;
     right: 40px;
+}
+
+.d-btn1 {
+    bottom: 100px;
+    right: -100px;
+}
+
+.d-btn1.show {
+    bottom: 100px;
+    right: 40px;
+}
+
+.checkbox-priviledge {
+	color: #f6675d;
 }
 
 .checkbox input:checked + .input-helper:before {
@@ -192,9 +276,16 @@ body.toggled #main {
 .command-undo, .command-undo:active,
 .command-download, .command-download:active,
 .command-lock, .command-lock:active,
-.command-post, .command-post:active {
+.command-post, .command-post:active,
+.command-attach, .command-attach:active,
+.command-send, .command-send:active,
+.command-assign, .command-assign:active,
+.command-approve, .command-approve:active,
+.command-disapprove, .command-disapprove:active,
+.command-view, .command-view:active {
 	background: #fff;	
     border: 1px solid #eee !important;
+    margin: 3px 2px;
 }
 
 .command-undo .zmdi,
@@ -202,8 +293,24 @@ body.toggled #main {
 .command-delete .zmdi,
 .command-download .zmdi,
 .command-lock .zmdi,
-.command-post .fa  {
+.command-send .zmdi,
+.command-attach .zmdi,
+.command-assign .zmdi,
+.command-post .fa,
+.command-view .zmdi,
+.command-approve .zmdi,
+.command-disapprove .zmdi  {
     color: #6D6D6D;
+}
+
+.labels {
+	color: #fafafa;
+	text-shadow: 1px 1px #333;
+	padding: 2px 10px 4px 10px; 
+	border-radius: 4px;
+	min-width: 83px;
+	text-align: center;
+	margin-top: 8px;
 }
 
 .waves-button, 
@@ -223,7 +330,8 @@ body.toggled #main {
 	z-index: 1001;
 }
 
-.fg-line .form-control:disabled {
+.fg-line .form-control:disabled,
+.bootstrap-select.btn-group .dropdown-toggle.disabled .filter-option {
 	font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
@@ -266,6 +374,33 @@ button[data-toggle="modal"] i {
 
 .has-error .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
 	border-bottom: 1px solid #f6675d;	
+}
+
+#job-order-billing-line-button {
+	min-width: 149.16px;
+}
+
+#job_order_no, 
+#job_elements_id,
+#job_request_sequence {
+	font-size: 24px;
+	font-weight: bold;
+	background: #fff;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
 }
 
 /*---------------------------------
@@ -565,4 +700,27 @@ button[data-toggle="modal"] i {
 	.super-modal-lg {
 		width: 90%;
 	}
+}
+
+#approval-job-request-table tr th:nth-child(10),
+#approval-job-request-table tr td:nth-child(10),
+#approval-job-request-table tr th:nth-child(9),
+#approval-job-request-table tr td:nth-child(9),
+#approval-job-request-table tr th:nth-child(8),
+#approval-job-request-table tr td:nth-child(8) {
+	display: none;
+}
+
+.expand-padding-t-b tr td{
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+
+.btn-record {
+	vertical-align: middle;
+	padding: 0;
+	padding-top: 4px;
+}
+.btn-record i {
+	font-size: 20px !important;
 }

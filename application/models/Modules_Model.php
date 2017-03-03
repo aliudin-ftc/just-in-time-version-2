@@ -65,8 +65,20 @@ class Modules_Model extends CI_Model {
         $this->db->from('modules_sub_modules as mod_sub_mod');
         $this->db->join('sub_modules as sub_mod','mod_sub_mod.sub_modules_id = sub_mod.sub_modules_id');
         $this->db->where('mod_sub_mod.modules_id', $modules_id);
-        $this->db->where('mod_sub_mod.resources_id', $resources_id);
+        $this->db->where('mod_sub_mod.priviledge_id', $resources_id);
         $query = $this->db->get();
         return $query->result();
+    }
+
+    public function get_sub_modules_name_by_id($id)
+    {
+        $this->db->where('sub_modules_id', $id);
+        $query = $this->db->get('sub_modules');
+
+        foreach ($query->result() as $row) {
+            $id = $row->sub_modules_name;
+        }
+
+        return $id;
     }
 }

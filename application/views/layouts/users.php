@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>J2V2 | <?= $template['title'] ?> <?= $template['sub_title'] ? ' - ' . $template['sub_title'] : '' ?>  <?= $template['method'] ? ' ('.$template['method'].')' : ''  ?></title>
+        <title>J2V2 | <?= ucwords(str_replace('-',' ',$template['title'])) ?> <?= $template['sub_title'] ? ' - ' . ucwords(str_replace('-',' ',$template['sub_title'])) : '' ?>  <?= $template['method'] ? ' ('.ucwords(str_replace('-',' ',$template['method'])).')' : ''  ?></title>
         <!-- Vendor CSS -->
         <link href="<?php echo base_url('assets/public/vendors/bower_components/animate.css/animate.min.css'); ?>" rel="stylesheet">
         <link href="<?php echo base_url('assets/public/vendors/bower_components/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet">
@@ -28,6 +28,9 @@
             var base_url = '<?= base_url() ?>';
             var controller = '<?= !empty($controller) ? $controller : '' ?>';
             var base_line = '<?= !empty($this->uri->segment($this->uri->total_segments())) ? $this->uri->segment($this->uri->total_segments()) : '' ?>';
+            var base_module = '<?= !empty($template['page']['method']) ? $template['page']['method'] : '' ?>';
+            var base_category = '<?= !empty($template['page']['category']) ? $template['page']['category'] : '' ?>';
+            var base_module_line = '<?= !empty($this->uri->segment($this->uri->total_segments())) ? $this->uri->segment($this->uri->total_segments() - 1) : '' ?>';
         </script>
     </head>
 
