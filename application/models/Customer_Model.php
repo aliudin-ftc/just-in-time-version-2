@@ -126,17 +126,107 @@ class Customer_Model extends CI_Model {
         $arr[] = array(
             '0' => 'select '.str_replace('_', ' ', $data).' here',
         );
-
         foreach ($query->result() as $row)
         {
             $arr[] = array(
-                $row->document_type_id => $row->document_type_description
+                $row->customer_id => $row->customer_description
             );
         }
-
-        return call_user_func_array('array_merge', $arr);
+        
+        $array = array();
+        foreach($arr as $arrs)
+            foreach($arrs as $key => $val)
+                $array[$key] = $val;
+        return $array;
     }   
     
+    public function form_selected_options($id)
+    {   
+        $this->db->select('*');
+        $this->db->from($this->customerTable);  
+        $this->db->where($this->customerColumn, $id);
+        $query = $this->db->get();
+        
+        if($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $row) {
+                $id = $row->customer_id;
+            }
+
+            return $id;
+        }
+        else 
+        {
+            return $id = '0';
+        }
+    }  
+
+    public function form_selected_brand_options($id)
+    {   
+        $this->db->select('*');
+        $this->db->from($this->customerTable.' as cus');
+        $this->db->join('brand as bra','cus.customer_id = bra.customer_id');
+        $this->db->where('bra.brand_id', $id);
+        $query = $this->db->get();
+        
+        if($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $row) {
+                $id = $row->customer_id;
+            }
+
+            return $id;
+        }
+        else 
+        {
+            return $id = '0';
+        }
+    }  
+
+    public function form_selected_contact_person_options($id)
+    {   
+        $this->db->select('*');
+        $this->db->from($this->customerTable.' as cus');
+        $this->db->join('contact_person as con','cus.customer_id = con.customer_id');
+        $this->db->where('con.contact_person_id', $id);
+        $query = $this->db->get();
+        
+        if($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $row) {
+                $id = $row->customer_id;
+            }
+
+            return $id;
+        }
+        else 
+        {
+            return $id = '0';
+        }
+    }
+
+    public function form_selected_account_options($id)
+    {   
+        $this->db->select('*');
+        $this->db->from($this->customerTable.' as cus');
+        $this->db->join('account as acc','cus.customer_id = acc.customer_id');
+        $this->db->where('acc.account_id', $id);
+        $query = $this->db->get();
+        
+        if($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $row) {
+                $id = $row->customer_id;
+            }
+
+            return $id;
+        }
+        else 
+        {
+            return $id = '0';
+        }
+    }      
+
     public function form_file($id)
     {   
         if(isset($id) && !empty($id))
@@ -242,14 +332,53 @@ class Customer_Model extends CI_Model {
     }
 
     public function like_customer($wildcard='', $start_from=0, $limit=0)
-    {
-        return $this->db->query("SELECT * FROM cite_form as cite INNER JOIN employee_information as emp ON cite.cite_reported_by = emp.emp_id INNER JOIN department_information as dep ON emp.dep_id = dep.dep_id 
-            WHERE ( (cite.cite_status != 'PROCESS') AND (cite.cite_reported_by = ".$this->session->userdata('emp_id').") OR (cite.cite_status != 'DRAFT') ) AND ( (cite.cite_status != 'DELETED') AND (cite.cite_status != 'PROCESS') AND (cite.cite_status != 'DONE') ) AND ( (cite.cite_status LIKE '%".$wildcard."%') OR (cite.cite_id LIKE '%".$wildcard."%') OR (emp.emp_firstname LIKE '%".$wildcard."%') OR (emp.emp_middlename LIKE '%".$wildcard."%') OR (emp.emp_lastname LIKE '%".$wildcard."%') OR (dep.dep_name LIKE '%".$wildcard."%')) ORDER BY cite.cite_id ASC LIMIT ".$start_from.", ".$limit."");   
+    {        
+        $this->db->select('*');
+        $this->db->from($this->customerTable.' as cus');
+        $this->db->join('status as stat','cus.customer_id = stat.status_table_id');
+        $this->db->join('business_unit as bus','cus.business_unit_id = bus.business_unit_id');
+        $this->db->join('resources as res','cus.resources_id = res.resources_id');
+        $this->db->join('resources_level as res_lvl','res.resources_id = res_lvl.resources_id');
+        $this->db->join('level as lvl','res_lvl.level_id = lvl.level_id');
+        $this->db->where('lvl.level_name','Account Executive');
+        $this->db->where('stat.status_table', $this->customerTable);  
+        $this->db->where('stat.status_code', 1);  
+        $this->db->group_start();
+        $this->db->or_where('cus.customer_id LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('cus.customer_name LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('bus.business_unit_code LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('res.resources_firstname LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('res.resources_lastname LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('cus.customer_credit_limit LIKE', '%' . $wildcard . '%');
+        $this->db->group_end();
+        $this->db->order_by('cus.'.$this->customerColumn, 'DESC');
+        $query = $this->db->limit( $limit, $start_from )->get();
+        return $query;
     }
 
     public function likes_customer($wildcard='')
     {
-        return $this->db->query("SELECT * FROM cite_form as cite INNER JOIN employee_information as emp ON cite.cite_reported_by = emp.emp_id INNER JOIN department_information as dep ON emp.dep_id = dep.dep_id WHERE ( (cite.cite_status !='PROCESS') AND (cite.cite_reported_by = ".$this->session->userdata('emp_id').") OR (cite.cite_status != 'DRAFT') ) AND ( (cite.cite_status != 'DELETED') AND (cite.cite_status != 'PROCESS') AND (cite.cite_status != 'DONE') ) AND ( (cite.cite_status LIKE '%".$wildcard."%') OR (cite.cite_id LIKE '%".$wildcard."%') OR (emp.emp_firstname LIKE '%".$wildcard."%') OR (emp.emp_middlename LIKE '%".$wildcard."%') OR (emp.emp_lastname LIKE '%".$wildcard."%') OR (dep.dep_name LIKE '%".$wildcard."%')) ORDER BY cite.cite_id ASC");
+        $this->db->select('*');
+        $this->db->from($this->customerTable.' as cus');
+        $this->db->join('status as stat','cus.customer_id = stat.status_table_id');
+        $this->db->join('business_unit as bus','cus.business_unit_id = bus.business_unit_id');
+        $this->db->join('resources as res','cus.resources_id = res.resources_id');
+        $this->db->join('resources_level as res_lvl','res.resources_id = res_lvl.resources_id');
+        $this->db->join('level as lvl','res_lvl.level_id = lvl.level_id');
+        $this->db->where('lvl.level_name','Account Executive');
+        $this->db->where('stat.status_table', $this->customerTable);  
+        $this->db->where('stat.status_code', 1);  
+        $this->db->group_start();
+        $this->db->or_where('cus.customer_id LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('cus.customer_name LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('bus.business_unit_code LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('res.resources_firstname LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('res.resources_lastname LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('cus.customer_credit_limit LIKE', '%' . $wildcard . '%');
+        $this->db->group_end();
+        $this->db->order_by('cus.'.$this->customerColumn, 'DESC');
+        $query = $this->db->get();
+        return $query;
     }
 
     public function get_all_archived_customer($start_from=0, $limit=0)
@@ -278,13 +407,161 @@ class Customer_Model extends CI_Model {
 
     public function like_archived_customer($wildcard='', $start_from=0, $limit=0)
     {
-        return $this->db->query("SELECT * FROM cite_form as cite INNER JOIN employee_information as emp ON cite.cite_reported_by = emp.emp_id INNER JOIN department_information as dep ON emp.dep_id = dep.dep_id 
-            WHERE ( (cite.cite_status != 'PROCESS') AND (cite.cite_reported_by = ".$this->session->userdata('emp_id').") OR (cite.cite_status != 'DRAFT') ) AND ( (cite.cite_status != 'DELETED') AND (cite.cite_status != 'PROCESS') AND (cite.cite_status != 'DONE') ) AND ( (cite.cite_status LIKE '%".$wildcard."%') OR (cite.cite_id LIKE '%".$wildcard."%') OR (emp.emp_firstname LIKE '%".$wildcard."%') OR (emp.emp_middlename LIKE '%".$wildcard."%') OR (emp.emp_lastname LIKE '%".$wildcard."%') OR (dep.dep_name LIKE '%".$wildcard."%')) ORDER BY cite.cite_id ASC LIMIT ".$start_from.", ".$limit."");   
+        $this->db->select('*');
+        $this->db->from($this->customerTable.' as cus');
+        $this->db->join('status as stat','cus.customer_id = stat.status_table_id');
+        $this->db->join('business_unit as bus','cus.business_unit_id = bus.business_unit_id');
+        $this->db->join('resources as res','cus.resources_id = res.resources_id');
+        $this->db->join('resources_level as res_lvl','res.resources_id = res_lvl.resources_id');
+        $this->db->join('level as lvl','res_lvl.level_id = lvl.level_id');
+        $this->db->where('lvl.level_name','Account Executive');
+        $this->db->where('stat.status_table', $this->customerTable);  
+        $this->db->where('stat.status_code', 0);  
+        $this->db->group_start();
+        $this->db->or_where('cus.customer_id LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('cus.customer_name LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('bus.business_unit_code LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('res.resources_firstname LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('res.resources_lastname LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('cus.customer_credit_limit LIKE', '%' . $wildcard . '%');
+        $this->db->group_end();
+        $this->db->order_by('cus.'.$this->customerColumn, 'DESC');
+        $query = $this->db->limit( $limit, $start_from )->get();
+        return $query;
     }
 
     public function likes_archived_customer($wildcard='')
     {
-        return $this->db->query("SELECT * FROM cite_form as cite INNER JOIN employee_information as emp ON cite.cite_reported_by = emp.emp_id INNER JOIN department_information as dep ON emp.dep_id = dep.dep_id WHERE ( (cite.cite_status !='PROCESS') AND (cite.cite_reported_by = ".$this->session->userdata('emp_id').") OR (cite.cite_status != 'DRAFT') ) AND ( (cite.cite_status != 'DELETED') AND (cite.cite_status != 'PROCESS') AND (cite.cite_status != 'DONE') ) AND ( (cite.cite_status LIKE '%".$wildcard."%') OR (cite.cite_id LIKE '%".$wildcard."%') OR (emp.emp_firstname LIKE '%".$wildcard."%') OR (emp.emp_middlename LIKE '%".$wildcard."%') OR (emp.emp_lastname LIKE '%".$wildcard."%') OR (dep.dep_name LIKE '%".$wildcard."%')) ORDER BY cite.cite_id ASC");
+        $this->db->select('*');
+        $this->db->from($this->customerTable.' as cus');
+        $this->db->join('status as stat','cus.customer_id = stat.status_table_id');
+        $this->db->join('business_unit as bus','cus.business_unit_id = bus.business_unit_id');
+        $this->db->join('resources as res','cus.resources_id = res.resources_id');
+        $this->db->join('resources_level as res_lvl','res.resources_id = res_lvl.resources_id');
+        $this->db->join('level as lvl','res_lvl.level_id = lvl.level_id');
+        $this->db->where('lvl.level_name','Account Executive');
+        $this->db->where('stat.status_table', $this->customerTable);  
+        $this->db->where('stat.status_code', 0);  
+        $this->db->group_start();
+        $this->db->or_where('cus.customer_id LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('cus.customer_name LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('bus.business_unit_code LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('res.resources_firstname LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('res.resources_lastname LIKE', '%' . $wildcard . '%');
+        $this->db->or_where('cus.customer_credit_limit LIKE', '%' . $wildcard . '%');
+        $this->db->group_end();
+        $this->db->order_by('cus.'.$this->customerColumn, 'DESC');
+        $query = $this->db->get();
+        return $query;
     }
 
+    public function get_customer_name_by_id($id)
+    {   
+        $this->db->where($this->customerColumn, $id);
+        $query = $this->db->get($this->customerTable);
+
+        foreach($query->result() as $row)
+        {
+            $id = $row->customer_name;
+        }
+
+        return $id;
+    }
+
+    public function get_account_executive_name_by_customer_id($id)
+    {
+        $this->db->select('*');
+        $this->db->from('customer as cus');
+        $this->db->join('resources as res','cus.resources_id = res.resources_id');
+        $this->db->where('cus.customer_id', $id);
+        $query = $this->db->get();
+
+        foreach ($query->result() as $row) {
+            $id = $row->resources_firstname.' '.$row->resources_middlename.' '.$row->resources_lastname;
+        }
+
+        return $id;
+    }
+
+    public function get_customer_values_by_id($id)
+    {   
+        $this->db->select('*');
+        $this->db->from('customer as cus');
+        $this->db->join('contact_person as con','cus.customer_id = con.customer_id');
+        $this->db->where('cus.customer_id', $id);
+        $query = $this->db->get();
+
+        foreach($query->result() as $row)
+        {
+            $arr = array(
+                'business_unit' => $row->business_unit_id,
+                'account_executive' => $row->resources_id,
+                'contact_person' => $row->contact_person_firstname.' '.$row->contact_person_middlename.'. '.$row->contact_person_lastname
+            );
+        }
+
+        return $arr;
+    }
+
+    public function form_select_jo_attributes($data)
+    {
+        $attributes = array(
+            'name'          => $data,
+            'id'            => $data,
+            'class'         => 'selectpicker',
+            'data-live-search'  => 'true'
+        );
+
+        return $attributes;
+    }
+
+    public function form_select_jo_options($data)
+    {   
+        $query = $this->db->get($this->customerTable);
+    
+        $arr[] = array(
+            '0' => 'select '.str_replace('_', ' ', $data).' here',
+        );
+        foreach ($query->result() as $row)
+        {
+            $arr[] = array(
+                $row->customer_id => $row->customer_description
+            );
+        }
+        
+        $array = array();
+        foreach($arr as $arrs)
+            foreach($arrs as $key => $val)
+                $array[$key] = $val;
+        return $array;
+    }        
+
+    public function form_selected_jo_cus_options($id)
+    {   
+        $job_id = $this->Job_Order_Model->find_job_id_by_job_no($id);
+        
+        $this->db->select('*');
+        $this->db->from($this->customerTable.' as cus');
+        $this->db->join('job_order as job','cus.customer_id = job.customer_id');    
+        $this->db->where('job.job_order_id',$job_id);
+        $query = $this->db->get();
+        
+        if($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $row) {
+                $id = $row->customer_id;
+            }
+
+            return $id;
+        }
+        else 
+        {
+            return $id = '0';
+        }
+    }
+    
+    public function form_selected_jo_options($id)
+    {   
+        return $id = '0';
+    }
 }

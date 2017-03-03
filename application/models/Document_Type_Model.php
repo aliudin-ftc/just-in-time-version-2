@@ -50,7 +50,11 @@ class Document_Type_Model extends CI_Model {
             );
         }
 
-        return call_user_func_array('array_merge', $arr);
+        $array = array();
+        foreach($arr as $arrs)
+            foreach($arrs as $key => $val)
+                $array[$key] = $val;
+        return $array;
     }
 
     public function form_selected_options($id)

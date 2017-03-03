@@ -2,7 +2,7 @@
     <div class="pull-left h-logo">
         <a href="index.html" class="hidden-xs">
             J2V2
-            <small>aliudin macalawi</small>
+            <small><?php echo $this->Resources_Model->get_resources_name_by_id($this->session->userdata('resources_id')); ?></small>
         </a>
 
         <div class="menu-collapse" data-ma-action="sidebar-open" data-ma-target="main-menu">
@@ -92,16 +92,13 @@
 
             <ul class="dropdown-menu pull-right dm-icon">
                 <li>
-                    <a href="profile-about.html"><i class="zmdi zmdi-account"></i> View Profile</a>
+                    <a href="<?php echo base_url('profile'); ?>"><i class="zmdi zmdi-account"></i> View Profile</a>
                 </li>
                 <li>
-                    <a href=""><i class="zmdi zmdi-input-antenna"></i> Privacy Settings</a>
+                    <a href="<?php echo base_url('settings'); ?>"><i class="zmdi zmdi-settings"></i> Settings</a>
                 </li>
                 <li>
-                    <a href=""><i class="zmdi zmdi-settings"></i> Settings</a>
-                </li>
-                <li>
-                    <a href=""><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                    <a href="<?php echo base_url('logout'); ?>"><i class="zmdi zmdi-time-restore"></i> Logout</a>
                 </li>
             </ul>
         </li>

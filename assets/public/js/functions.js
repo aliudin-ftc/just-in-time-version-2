@@ -405,7 +405,7 @@ $(document).ready(function(){
     //Date
     if ($('.date-picker')[0]) {
     	$('.date-picker').datetimepicker({
-    	    format: 'DD/MM/YYYY'
+    	    format: 'DD-MMM-YYYY'
     	});
     }
 
@@ -548,7 +548,8 @@ $(document).ready(function(){
             t.removeClass('toggled');
 
             setTimeout(function(){
-                $('.login').attr('data-lbg', c);
+                $('#l-forget-password .title').removeClass('hidden').textillate();
+                //$('.login').attr('data-lbg', c);
                 $(z).addClass('toggled');
             });
 
