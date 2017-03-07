@@ -432,4 +432,37 @@ class Job_Element_Model extends CI_Model {
         $query = $this->db->get();
         return $query;
     }
+
+    public function direct_materials_powder_cost_element($start_from=0, $limit=0, $elem_id)
+    {  
+        $this->db->select('diri.direct_materials_item_id, diri.powder_plastic_coat_id, diri.max_coated_volume_id, diri.direct_materials_item_sq_in_unit, diri.direct_materials_item_costs');
+        $this->db->from('cost_estimate as cost');
+        $this->db->join('dir_mat_est_cost_est as dir','cost.cost_estimate_id = dir.cost_estimate_id');
+        $this->db->join('direct_materials_estimate as dirm','dir.direct_materials_estimate_id = dirm.direct_materials_estimate_id');
+        $this->db->join('direct_materials_item as diri','dirm.direct_materials_estimate_id = diri.direct_materials_estimate_id');
+        $this->db->join('status as stat','diri.direct_materials_item_id = stat.status_table_id');
+        $this->db->where('cost.job_elements_id', $elem_id);  
+        $this->db->where('stat.status_table', 'direct_materials_item');  
+        $this->db->where('stat.status_code', 1);  
+        $this->db->order_by('diri.direct_materials_item_id', 'DESC');
+        $query = $this->db->limit( $limit, $start_from )->get();
+        return $query;
+    }
+
+    public function direct_materials_powder_cost_elements($elem_id)
+    {   
+        $this->db->select('diri.direct_materials_item_id, diri.powder_plastic_coat_id, diri.max_coated_volume_id, diri.direct_materials_item_sq_in_unit, diri.direct_materials_item_costs');
+        $this->db->from('cost_estimate as cost');
+        $this->db->join('dir_mat_est_cost_est as dir','cost.cost_estimate_id = dir.cost_estimate_id');
+        $this->db->join('direct_materials_estimate as dirm','dir.direct_materials_estimate_id = dirm.direct_materials_estimate_id');
+        $this->db->join('direct_materials_item as diri','dirm.direct_materials_estimate_id = diri.direct_materials_estimate_id');
+        $this->db->join('status as stat','diri.direct_materials_item_id = stat.status_table_id');
+        $this->db->where('cost.job_elements_id', $elem_id);  
+        $this->db->where('stat.status_table', 'direct_materials_item');  
+        $this->db->where('stat.status_code', 1);  
+        $this->db->order_by('diri.direct_materials_item_id', 'DESC');
+        $query = $this->db->get();
+        return $query;
+    }
+
 }

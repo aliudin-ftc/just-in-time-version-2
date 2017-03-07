@@ -57,7 +57,14 @@ class Estimates extends CI_Controller {
             'Priviledge_Module_Model' => 'Priviledge_Module_Model',
             'Job_Request_Module_Status_Sent_Model' => 'Job_Request_Module_Status_Sent_Model',
             'Job_Request_Module_Assigned_Model' => 'Job_Request_Module_Assigned_Model',
-            'Job_Request_Module_Approval_Model' => 'Job_Request_Module_Approval_Model'
+            'Job_Request_Module_Approval_Model' => 'Job_Request_Module_Approval_Model',
+            'Powder_Plastic_Coat_Model' => 'Powder_Plastic_Coat_Model',
+            'Max_Coated_Volume_Model' => 'Max_Coated_Volume_Model',
+            'Direct_Materials_Item_Model' => 'Direct_Materials_Item_Model',
+            'Dir_Mat_Est_Cost_Est_Model' => 'Dir_Mat_Est_Cost_Est_Model',
+            'Cost_Estimate_Model' => 'Cost_Estimate_Model',
+            'Direct_Materials_Estimate_Model' => 'Direct_Materials_Estimate_Model',
+            'Section_Model' => 'Section_Model'
         );
 
         $this->load->model($models);  
@@ -367,7 +374,6 @@ class Estimates extends CI_Controller {
         return $data;
     }
 
-
     public function cost_estimate($page = null, $view = null, $param1 = null, $param2 = null)
     { 
         $this->validated();
@@ -453,6 +459,8 @@ class Estimates extends CI_Controller {
         {
             $data['menu'] = $this->load_menus($this->session->userdata('priviledge_id'));
             $data['input'] = $this->job_request_form_data($view);
+            $data['input_section'] = $this->labor_form_data('');
+            $data['input_direct_materials'] = $this->direct_material_form_data('');
             $data['template']   = array(
             'title'           => $page,
             'sub_title'       => 'Job Request',
@@ -481,6 +489,151 @@ class Estimates extends CI_Controller {
             $this->load->view($data['template']['layouts'], $data);
         }
 
+    }
+
+    public function labor_form_data($id) 
+    { 
+        $section['result'] = $this->Section_Model->all_sections();
+
+        $arr = array();
+
+        foreach ($section['result'] as $row) {
+            $arr[] = array(
+                $row->section_id => $this->Section_Model->form_input_numeric_attributes($row->section_id, $id)
+            );
+        }
+
+        $array = array();
+        foreach($arr as $arrs)
+            foreach($arrs as $key => $val)
+                $array[$key] = $val;
+        return $array;
+    }
+
+    public function direct_material_form_data($id) 
+    {   
+        $data = array( 
+            'powder_plastic_coat_attributes' => $this->Powder_Plastic_Coat_Model->form_select_attributes('powder_plastic_coat_id'), 
+                'powder_plastic_coat_options' => $this->Powder_Plastic_Coat_Model->form_select_options('powder_plastic_coat'),
+                'powder_plastic_coat_selected' => $this->Powder_Plastic_Coat_Model->form_selected_options($id),
+            'max_coated_volume_attributes' => $this->Max_Coated_Volume_Model->form_select_attributes('max_coated_volume_id'), 
+                'max_coated_volume_options' => $this->Max_Coated_Volume_Model->form_select_options('max_coated_volume'),
+                'max_coated_volume_selected' => $this->Max_Coated_Volume_Model->form_selected_options($id),
+            'item_sq_in_unit' => $this->Direct_Materials_Item_Model->form_input_numeric_attributes('direct_materials_item_sq_in_unit', $id),
+            'item_costs' => $this->Direct_Materials_Item_Model->form_input_numeric_attributes('direct_materials_item_costs', $id)
+        );
+        return $data;
+    }
+
+    public function direct_materials_powder($page = null, $view = null)
+    {
+        if ($page == "lists")
+        {
+        //if( $this->input->is_ajax_request() )
+        //{
+            $bootgrid_arr = [];
+            $current      = null != $this->input->post('current') ? $this->input->post('current') : 1;
+            $limit        = $this->input->post('rowCount') == -1 ? 0 : $this->input->post('rowCount');
+            $page         = $current !== null ? $current : 1;
+            $start_from   = ($page-1) * $limit;
+            $wildcard     = null != $this->input->post('searchPhrase') ? $this->input->post('searchPhrase') : null;
+            $element_id = $this->input->post('element_id');
+
+            if( isset($wildcard) )
+            {
+                $job_elements = $this->Job_Element_Model->like_attach_job_element($wildcard, $start_from, $limit)->result_array();
+                $total = $this->Job_Element_Model->likes_attach_job_element($wildcard)->num_rows();
+
+            }
+            else
+            {
+                $job_elements = $this->Job_Element_Model->direct_materials_powder_cost_element($start_from,  $limit, $element_id)->result_array();
+                $total = $this->Job_Element_Model->direct_materials_powder_cost_elements($element_id)->num_rows();
+            }
+
+            foreach ($job_elements as $key => $job_element) 
+            {
+                $bootgrid_arr[] = array(
+                    'count_id' => $key + 1 + $start_from,
+                    'item-id' => $job_element['direct_materials_item_id'],
+                    'item' => $this->Powder_Plastic_Coat_Model->get_powder_plastic_coat_name_by_id($job_element['powder_plastic_coat_id']),
+                    'item-sq-in' => $this->Max_Coated_Volume_Model->get_max_coated_volume_price_by_id($job_element['max_coated_volume_id']),
+                    'item-sq-unit' => $job_element['direct_materials_item_sq_in_unit'],
+                    'item_price_sq' => number_format($job_element['direct_materials_item_costs'],5),
+                    'item_cost' => number_format(($job_element['direct_materials_item_sq_in_unit'] * $job_element['direct_materials_item_costs']), 5),
+                    'item_costs' => floatval($job_element['direct_materials_item_sq_in_unit'] * $job_element['direct_materials_item_costs'])
+                );
+            }
+
+            $data = array(
+                "current"       => intval($current),
+                "rowCount"      => $limit,
+                "searchPhrase"  => $wildcard,
+                "total"         => intval( $total ),
+                "rows"          => $bootgrid_arr,
+            );
+
+            echo json_encode( $data );
+            exit();
+        //}
+        }
+        else if ($page == "save")
+        {
+            //if( $this->input->is_ajax_request() )
+            //{ 
+                $direct_materials_estimate = array(
+                    'direct_materials_estimate_id' => null
+                );
+
+                $direct_materials_estimate_id = $this->Direct_Materials_Estimate_Model->insert($direct_materials_estimate);
+
+                $cost_estimate = array(
+                    'job_elements_id' => $this->input->get('element_id')
+                );
+
+                $cost_estimate_id = $this->Cost_Estimate_Model->insert($cost_estimate);
+
+                $dir_mat_est_cost_est = array(
+                    'direct_materials_estimate_id' => $direct_materials_estimate_id,
+                    'cost_estimate_id' => $cost_estimate_id
+                );
+
+                $dir_mat_est_cost_est_id = $this->Dir_Mat_Est_Cost_Est_Model->insert($dir_mat_est_cost_est);
+
+                $direct_materials_item = array(
+                    'direct_materials_estimate_id' => $direct_materials_estimate_id,
+                    'powder_plastic_coat_id' =>  $this->input->get('powder_plastic_coat_id'),
+                    'max_coated_volume_id' =>  $this->input->get('max_coated_volume_id'),
+                    'direct_materials_item_sq_in_unit' => $this->input->get('direct_materials_item_sq_in_unit'),
+                    'direct_materials_item_costs' => $this->input->get('direct_materials_item_costs'),
+                );
+
+                $direct_materials_item_id = $this->Direct_Materials_Item_Model->insert($direct_materials_item);
+
+                $created = array(
+                    'created_by' => '1',
+                    'created_table' => 'direct_materials_item',
+                    'created_table_id' => $direct_materials_item_id
+                );
+                
+                $created_id = $this->Created_Model->insert($created);
+
+                $status = array(
+                    'status_code' => '1',
+                    'status_description' => 'Active',
+                    'status_table' => 'direct_materials_item',
+                    'status_table_id' => $direct_materials_item_id
+                );
+                
+                $status_id = $this->Status_Model->insert($status);
+
+                $data = array(
+                    'message' => 'The direct materials estimate was successfully saved.',
+                    'type'    => 'success'
+                );
+                echo json_encode( $data ); exit();
+           // }
+        }
     }
 
     public function attach_elements($id)
