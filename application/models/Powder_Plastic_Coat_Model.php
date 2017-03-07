@@ -341,4 +341,57 @@ class Powder_Plastic_Coat_Model extends CI_Model {
         return $id;
     }
 
-}
+    public function form_select_attributes($data)
+    {
+        $attributes = array(
+            'name'          => $data,
+            'id'            => $data,
+            'class'         => 'selectpicker',
+            'data-live-search'  => 'true'
+        );
+
+        return $attributes;
+    }
+
+    public function form_select_options($data)
+    {   
+        $query = $this->db->get($this->powder_plastic_coatTable);
+    
+        $arr[] = array(
+            '0' => 'select '.str_replace('_', ' ', $data).' here',
+        );
+        foreach ($query->result() as $row)
+        {
+            $arr[] = array(
+                $row->powder_plastic_coat_id => $row->powder_plastic_coat_name
+            );
+        }
+        
+        $array = array();
+        foreach($arr as $arrs)
+            foreach($arrs as $key => $val)
+                $array[$key] = $val;
+        return $array;
+    }   
+    
+    public function form_selected_options($id)
+    {   
+        $this->db->select('*');
+        $this->db->from($this->powder_plastic_coatTable);  
+        $this->db->where($this->powder_plastic_coatColumn, $id);
+        $query = $this->db->get();
+        
+        if($query->num_rows() > 0)
+        {
+            foreach ($query->result() as $row) {
+                $id = $row->powder_plastic_coat_id;
+            }
+
+            return $id;
+        }
+        else 
+        {
+            return $id = '0';
+        }
+    } 
+}   

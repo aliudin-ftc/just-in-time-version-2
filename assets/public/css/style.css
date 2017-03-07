@@ -5,6 +5,10 @@
 	background: #dc2430;
 }
 
+.modal {
+    overflow-y: scroll !important;
+}
+
 [data-ma-header="teal"]:before, 
 [data-ma-header="teal"] #header,
 .palette-Teal.bg {
@@ -721,6 +725,46 @@ button[data-toggle="modal"] i {
 	padding: 0;
 	padding-top: 4px;
 }
+
 .btn-record i {
 	font-size: 20px !important;
+}
+
+.panel-group:not([data-collapse-color]) .panel-collapse .panel-heading.active .panel-title > a:after {
+	background: #dc2430;
+}
+
+.prices:before {
+	content: '₱ ';
+}
+
+#cost-estimate-element-modal .panel-group .panel-collapse:last-child .panel-heading:not(.active) .panel-title > a:before {
+	background: transparent;
+}
+
+#cost-estimate-element-modal .panel-group .panel-collapse:last-child .panel-heading:before {
+	content: '';
+}
+
+#cost-estimate-element-modal .panel-group .panel-collapse:last-child span {
+	font-size: 20px;
+}
+
+#direct-materials-powder-plastic-coat-table tr td,
+#direct-materials-powder-plastic-coat-table tr th {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+
+.front-backdrop {
+    z-index: 1050 !important;
+}
+
+#powder-plastic-coat-line-modal {
+    z-index: 1051 !important;
+}
+
+#labor-panel .col-sm-4:last-child ..form-group {
+	margin-bottom: 0;
 }

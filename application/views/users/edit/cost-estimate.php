@@ -37,6 +37,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                    </tbody>
                     </table>
                 </div>
             </div>
@@ -45,6 +46,9 @@
     </div>
 </section>
 
-<button id="save-job-request-btn" title="Save Job Request" class="btn btn-pause btn-float theme-bg-2 m-btn waves-effect waves-circle waves-float btn-record">
-    <i class="fa fa-pause"></i>
+<button id="save-job-request-btn" title="click to unlock the form" class="btn btn-pause btn-float theme-bg-1 m-btn waves-effect waves-circle waves-float">
+    <i class="zmdi zmdi-lock"></i>
 </button>
+
+<?php $this->load->view('users/modals/powder-plastic-coat-line'); ?> 
+<?php $this->load->view('users/modals/cost-estimate-element'); ?>
