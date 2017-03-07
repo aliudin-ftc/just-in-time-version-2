@@ -38,7 +38,10 @@ class Maintenance extends CI_Controller {
             'Priviledge_Module_Model' => 'Priviledge_Module_Model',
             'Modules_Sub_Module_Model' => 'Modules_Sub_Module_Model',
             'Powder_Plastic_Coat_Model' => 'Powder_Plastic_Coat_Model',
-            'Painting_Cost_Model' => 'Painting_Cost_Model'
+            'Painting_Cost_Model' => 'Painting_Cost_Model',
+            //////////
+            'Bill_Of_Materials_Category_Model' => 'Bill_Of_Materials_Category_Model',
+            'History_Model' => 'History_Model'
         );
 
         $this->load->model($models);  
@@ -4613,5 +4616,389 @@ class Maintenance extends CI_Controller {
             show_404();
         }
     }
-    ////// test
+    //////////////////////////////////////////// Additional BOM Category ////////////////////////////////////////////
+    public function bill_of_materials_category($page = null, $view = null, $param1 = null, $param2 = null)
+    {   
+        $this->validated();
+        if($page == "manage" || $page == null)
+        {
+            $data['menu'] = $this->load_menus($this->session->userdata('priviledge_id'));
+            $data['template']   = array(
+                'title'         => 'Maintenance',
+                'sub_title'     => 'Bill Of Materials Category',
+                'method'        => 'Manage',
+                'body'          => 'users/manage/bill-of-materials-category',
+                'layouts'       => 'layouts/users',
+                'page'          => array(
+                    'parent'    => $this->router->fetch_class(),
+                    'category'  => $this->router->fetch_method(),
+                    'modules'   => $page,
+                    'views'     => $view,     
+                    'method'    => $param1,
+                    ),
+                'partials'      => array(
+                    'header'    => 'templates/header',
+                    'footer'    => 'templates/footer',
+                    'sidebar1'   => 'templates/sidebar1',
+                    'sidebar2'   => 'templates/sidebar2'
+                    ),
+                'metadata'      => array(
+                    '<script src="' . base_url("assets/private/users/js/bill-of-materials-category.js") . '"></script>'
+                    )
+                );
+            $this->load->view($data['template']['layouts'], $data);
+        }
+        else if($page == "lists")
+        {
+            if( $this->input->is_ajax_request() )
+            {
+                $bootgrid_arr = [];
+                $current      = null != $this->input->post('current') ? $this->input->post('current') : 1;
+                $limit        = $this->input->post('rowCount') == -1 ? 0 : $this->input->post('rowCount');
+                $page         = $current !== null ? $current : 1;
+                $start_from   = ($page-1) * $limit;
+                $wildcard     = null != $this->input->post('searchPhrase') ? $this->input->post('searchPhrase') : null;
+                
+
+                if( isset($wildcard) )
+                {
+                    $bill_of_materials_category = $this->Bill_Of_Materials_Category_Model->like_bill_of_materials_category($wildcard, $start_from, $limit)->result_array();
+                    $total = $this->Bill_Of_Materials_Category_Model->like_count_bill_of_materials_category($wildcard)->num_rows();
+
+                }
+                else
+                {
+                    $bill_of_materials_category = $this->Bill_Of_Materials_Category_Model->get_all_bill_of_materials_category($start_from,$limit)->result_array();
+                    $total = $this->Bill_Of_Materials_Category_Model->get_all_count_bill_of_materials_category()->num_rows();
+                }
+
+                foreach ($bill_of_materials_category as $key => $bill_of_materials_category_rows) 
+                {
+                    $bootgrid_arr[] = array(
+                        'count_id'          => $key + 1 + $start_from,
+                        'id'                => $bill_of_materials_category_rows['bill_of_materials_category_id'],
+                        'bill-of-materials-category-code'   => $bill_of_materials_category_rows['bill_of_materials_category_code'],
+                        'bill-of-materials-category-name'   => $bill_of_materials_category_rows['bill_of_materials_category_name'],
+                        'bill-of-materials-category-desc'   => $bill_of_materials_category_rows['bill_of_materials_category_description']
+                    );
+                }
+
+                $data = array(
+                    "current"       => intval($current),
+                    "rowCount"      => $limit,
+                    "searchPhrase"  => $wildcard,
+                    "total"         => intval( $total ),
+                    "rows"          => $bootgrid_arr,
+                );
+
+                echo json_encode( $data );
+                exit();
+            }
+        }
+        else if($page == "add")
+        {
+            $data['menu'] = $this->load_menus($this->session->userdata('priviledge_id'));
+            $data['input'] = $this->bill_of_materials_category_form_data('');
+            $data['template']   = array(
+                'title'         => 'Maintenance',
+                'sub_title'     => 'Bill of Materials Category',
+                'method'        => 'Add',
+                'body'          => 'users/add/bill-of-materials-category',
+                'layouts'       => 'layouts/users',
+                'page'          => array(
+                    'parent'    => $this->router->fetch_class(),
+                    'category'  => $this->router->fetch_method(),
+                    'modules'   => $page,
+                    'views'     => $view,     
+                    'method'    => $param1,
+                    ),
+                'partials'      => array(
+                    'header'    => 'templates/header',
+                    'footer'    => 'templates/footer',
+                    'sidebar1'   => 'templates/sidebar1',
+                    'sidebar2'   => 'templates/sidebar2'
+                    ),
+                'metadata'      => array(
+                    '<script src="' . base_url("assets/private/users/js/bill-of-materials-category.js") . '"></script>'
+                    )
+                );
+            $this->load->view($data['template']['layouts'], $data);
+        }
+        else if($page == "save")
+        {
+            if( $this->input->is_ajax_request() ) 
+            {
+                $bill_of_materials_category = array(
+                    'bill_of_materials_category_code' =>  $this->input->post('bill_of_materials_category_code'),
+                    'bill_of_materials_category_name' =>  $this->input->post('bill_of_materials_category_name'),
+                    'bill_of_materials_category_description' => $this->input->post('bill_of_materials_category_description')
+                );
+
+                $bill_of_materials_category_id = $this->Bill_Of_Materials_Category_Model->insert($bill_of_materials_category);
+
+                $history = array(
+                    'history_logs' => 'has created new bill of materials category',
+                    'history_details' =>
+                        "{".
+                        "bill_of_materials_category_code: " .
+                        '"'.
+                        $this->input->post('bill_of_materials_category_code') .
+                        '",'.
+
+                        "bill_of_materials_category_name: " .
+                        '"'.
+                        $this->input->post('bill_of_materials_category_name') .
+                        '",'.
+
+                        "bill_of_materials_category_description: ". 
+                        '"'.
+                        $this->input->post('bill_of_materials_category_description').
+                        '"'.
+                        "}",
+                    'history_category' => 'bill_of_materials_category',
+                    'history_timestamp' => date('Y-m-d H:i:s'),
+                    'history_by' => '1',
+                );
+                
+                $history_id = $this->History_Model->insert($history);
+
+                $created = array(
+                    'created_by' => '1',
+                    'created_table' => 'bill_of_materials_category',
+                    'created_table_id' => $bill_of_materials_category_id
+                );
+                
+                $created_id = $this->Created_Model->insert($created);
+
+                $status = array(
+                    'status_code' => '1',
+                    'status_description' => 'Active',
+                    'status_table' => 'bill_of_materials_category',
+                    'status_table_id' => $bill_of_materials_category_id
+                );
+                
+                $status_id = $this->Status_Model->insert($status);
+
+                $data = array(
+                    'message' => 'The bill of materials category was successfully removed.',
+                    'type'    => 'success'
+                );
+                echo json_encode( $data ); exit();
+            }
+        }
+        else if($page == "edit" && $view != null)
+        {
+            $data['menu'] = $this->load_menus($this->session->userdata('priviledge_id'));
+            $data['input'] = $this->bill_of_materials_category_form_data($view);
+            $data['template']   = array(
+                'title'         => 'Maintenance',
+                'sub_title'     => 'Bill Of Materials Category',
+                'method'        => 'Edit',
+                'body'          => 'users/edit/bill-of-materials-category',
+                'layouts'       => 'layouts/users',
+                'page'          => array(
+                    'parent'    => $this->router->fetch_class(),
+                    'category'  => $this->router->fetch_method(),
+                    'modules'   => $page,
+                    'views'     => $view,     
+                    'method'    => $param1,
+                    ),
+                'partials'      => array(
+                    'header'    => 'templates/header',
+                    'footer'    => 'templates/footer',
+                    'sidebar1'   => 'templates/sidebar1',
+                    'sidebar2'   => 'templates/sidebar2'
+                    ),
+                'metadata'      => array(
+                    '<script src="' . base_url("assets/private/users/js/bill-of-materials-category.js") . '"></script>'
+                    )
+                );
+            $this->load->view($data['template']['layouts'], $data);
+        }
+        else if($page == "find" && $view != null)
+        {
+            if( $this->input->is_ajax_request() ) {
+                $arr = $this->Bill_Of_Materials_Category_Model->find($view);           
+                echo json_encode( $arr );
+                exit();
+            }
+        }
+        else if($page == "update" && $view != null)
+        {
+            if( $this->input->is_ajax_request() ) 
+            {
+                $bill_of_materials_category = array(
+                    'bill_of_materials_category_code' => $this->input->post('bill_of_materials_category_code'),
+                    'bill_of_materials_category_name' => $this->input->post('bill_of_materials_category_name'),
+                    'bill_of_materials_category_description' => $this->input->post('bill_of_materials_category_description')
+                );
+
+                $this->Bill_Of_Materials_Category_Model->modify($bill_of_materials_category, $view);
+
+                $history = array(
+                    'history_logs' => 'has edited bill of materials category',
+                    'history_details' =>
+                        "{".
+                        "bill_of_materials_category_id: " .
+                        '"'.
+                        $view.
+                        '",'.
+
+                        "bill_of_materials_category_code: " .
+                        '"'.
+                        $this->input->post('bill_of_materials_category_code') .
+                        '",'.
+
+                        "bill_of_materials_category_name: " .
+                        '"'.
+                        $this->input->post('bill_of_materials_category_name') .
+                        '",'.
+
+                        "bill_of_materials_category_description: ". 
+                        '"'.
+                        $this->input->post('bill_of_materials_category_description').
+                        '"'.
+                        "}",
+                    'history_category' => 'bill_of_materials_category',
+                    'history_timestamp' => date('Y-m-d H:i:s'),
+                    'history_by' => '1',
+                );
+                
+                $history_id = $this->History_Model->insert($history);
+
+                $updated = array(
+                    'updated_by' => '1',
+                    'updated_table' => 'bill_of_materials_category',
+                    'updated_table_id' => $view
+                );
+                
+                $updated_id = $this->Updated_Model->insert($updated);
+            }
+        }
+        else if($page == "delete" && $view != null)
+        {
+            if( $this->input->is_ajax_request() ) 
+            {
+                $status = array(
+                    'status_table_id' => $view,
+                    'status_table' => 'bill_of_materials_category',
+                    'status_code' => '0',
+                    'status_description' => 'Inactive'  
+                );
+
+                $status_id = $this->Status_Model->delete($status);
+
+                $history = array(
+                    'history_logs' => 'has restored bill of materials category',
+                    'history_details' =>
+                        "{".
+                        "bill_of_materials_category_id: " .
+                        '"'.
+                        $view.
+                        '"'.
+                        "}",
+                    'history_category' => 'bill_of_materials_category',
+                    'history_timestamp' => date('Y-m-d H:i:s'),
+                    'history_by' => '1',
+                );
+                
+                $history_id = $this->History_Model->insert($history);
+
+                $data = array(
+                    'message' => 'The bill of materials category was successfully removed.',
+                    'type'    => 'success'
+                );
+                echo json_encode( $data ); exit();
+
+            }   
+        }
+        else if($page == "archived")
+        {
+            $data['menu'] = $this->load_menus($this->session->userdata('priviledge_id'));
+            $data['template']   = array(
+                'title'         => 'Maintenance',
+                'sub_title'     => 'Bill Of Materials Category',
+                'method'        => 'Manage',
+                'body'          => 'users/archived/bill-of-materials-category',
+                'layouts'       => 'layouts/users',
+                'page'          => array(
+                    'parent'    => $this->router->fetch_class(),
+                    'category'  => $this->router->fetch_method(),
+                    'modules'   => $page,
+                    'views'     => $view,     
+                    'method'    => $param1,
+                    ),
+                'partials'      => array(
+                    'header'    => 'templates/header',
+                    'footer'    => 'templates/footer',
+                    'sidebar1'   => 'templates/sidebar1',
+                    'sidebar2'   => 'templates/sidebar2'
+                    ),
+                'metadata'      => array(
+                    '<script src="' . base_url("assets/private/users/js/bill-of-materials-category.js") . '"></script>'
+                    )
+                );
+            $this->load->view($data['template']['layouts'], $data);
+        }
+        else if($page == "archived-lists")
+        {
+            if( $this->input->is_ajax_request() )
+            {
+                $bootgrid_arr = [];
+                $current      = null != $this->input->post('current') ? $this->input->post('current') : 1;
+                $limit        = $this->input->post('rowCount') == -1 ? 0 : $this->input->post('rowCount');
+                $page         = $current !== null ? $current : 1;
+                $start_from   = ($page-1) * $limit;
+                $wildcard     = null != $this->input->post('searchPhrase') ? $this->input->post('searchPhrase') : null;
+                
+
+                if( isset($wildcard) )
+                {
+                    $customers = $this->Customer_Model->like_archived_customer($wildcard, $start_from, $limit)->result_array();
+                    $total = $this->Customer_Model->likes_archived_customer($wildcard)->num_rows();
+
+                }
+                else
+                {
+                    $customers = $this->Customer_Model->get_all_archived_customer($start_from,  $limit)->result_array();
+                    $total = $this->Customer_Model->get_alls_archived_customer()->num_rows();
+                }
+
+                foreach ($customers as $key => $customer) 
+                {
+                    $bootgrid_arr[] = array(
+                        'count_id'          => $key + 1 + $start_from,
+                        'id'                => $customer['customer_id'],
+                        'name'              => $customer['customer_name'],
+                        'business-unit'     => $this->Business_Unit_Model->get_business_unit_name($customer['business_unit_id']),
+                        'account-executive' => $this->Resources_Model->get_account_executive_name($customer['resources_id']),
+                        'credit-limit'      => $customer['customer_credit_limit'] 
+                    );
+                }
+
+                $data = array(
+                    "current"       => intval($current),
+                    "rowCount"      => $limit,
+                    "searchPhrase"  => $wildcard,
+                    "total"         => intval( $total ),
+                    "rows"          => $bootgrid_arr,
+                );
+
+                echo json_encode( $data );
+                exit();
+            }
+        }   
+        else {
+            show_404();
+        }  
+    }
+    public function bill_of_materials_category_form_data($id) 
+    {   
+        $data = array( 
+            'bill_of_materials_category_code' => $this->Bill_Of_Materials_Category_Model->form_input_attributes('bill_of_materials_category_code', $id),
+            'bill_of_materials_category_name' => $this->Bill_Of_Materials_Category_Model->form_input_attributes('bill_of_materials_category_name', $id),
+            'bill_of_materials_category_description' => $this->Bill_Of_Materials_Category_Model->form_input_attributes('bill_of_materials_category_description', $id),
+        );
+        return $data;
+    }
 }
