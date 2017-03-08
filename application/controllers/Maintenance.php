@@ -4889,7 +4889,7 @@ class Maintenance extends CI_Controller {
                 $status_id = $this->Status_Model->delete($status);
 
                 $history = array(
-                    'history_logs' => 'has restored bill of materials category',
+                    'history_logs' => 'has archived bill of materials category',
                     'history_details' =>
                         "{".
                         "bill_of_materials_category_id: " .
@@ -4918,7 +4918,7 @@ class Maintenance extends CI_Controller {
             $data['template']   = array(
                 'title'         => 'Maintenance',
                 'sub_title'     => 'Bill Of Materials Category',
-                'method'        => 'Manage',
+                'method'        => 'Archived',
                 'body'          => 'users/archived/bill-of-materials-category',
                 'layouts'       => 'layouts/users',
                 'page'          => array(
@@ -4942,7 +4942,7 @@ class Maintenance extends CI_Controller {
         }
         else if($page == "archived-lists")
         {
-            if( $this->input->is_ajax_request() )
+           if( $this->input->is_ajax_request() )
             {
                 $bootgrid_arr = [];
                 $current      = null != $this->input->post('current') ? $this->input->post('current') : 1;
@@ -4954,25 +4954,24 @@ class Maintenance extends CI_Controller {
 
                 if( isset($wildcard) )
                 {
-                    $customers = $this->Customer_Model->like_archived_customer($wildcard, $start_from, $limit)->result_array();
-                    $total = $this->Customer_Model->likes_archived_customer($wildcard)->num_rows();
+                    $bill_of_materials_category = $this->Bill_Of_Materials_Category_Model->like_archived_bill_of_materials_category($wildcard, $start_from, $limit)->result_array();
+                    $total = $this->Bill_Of_Materials_Category_Model->like_archived_count_bill_of_materials_category($wildcard)->num_rows();
 
                 }
                 else
                 {
-                    $customers = $this->Customer_Model->get_all_archived_customer($start_from,  $limit)->result_array();
-                    $total = $this->Customer_Model->get_alls_archived_customer()->num_rows();
+                    $bill_of_materials_category = $this->Bill_Of_Materials_Category_Model->get_all_archived_bill_of_materials_category($start_from,  $limit)->result_array();
+                    $total = $this->Bill_Of_Materials_Category_Model->get_all_archived_count_bill_of_materials_category()->num_rows();
                 }
 
-                foreach ($customers as $key => $customer) 
+                foreach ($bill_of_materials_category as $key => $bill_of_materials_category_rows) 
                 {
                     $bootgrid_arr[] = array(
                         'count_id'          => $key + 1 + $start_from,
-                        'id'                => $customer['customer_id'],
-                        'name'              => $customer['customer_name'],
-                        'business-unit'     => $this->Business_Unit_Model->get_business_unit_name($customer['business_unit_id']),
-                        'account-executive' => $this->Resources_Model->get_account_executive_name($customer['resources_id']),
-                        'credit-limit'      => $customer['customer_credit_limit'] 
+                        'id'                => $bill_of_materials_category_rows['bill_of_materials_category_id'],
+                        'bill-of-materials-category-code'   => $bill_of_materials_category_rows['bill_of_materials_category_code'],
+                        'bill-of-materials-category-name'   => $bill_of_materials_category_rows['bill_of_materials_category_name'],
+                        'bill-of-materials-category-desc'   => $bill_of_materials_category_rows['bill_of_materials_category_description']
                     );
                 }
 
@@ -4987,10 +4986,44 @@ class Maintenance extends CI_Controller {
                 echo json_encode( $data );
                 exit();
             }
-        }   
-        else {
-            show_404();
         }  
+        else if($page == "undo" && $view != null)
+        {
+            if( $this->input->is_ajax_request() ) 
+            {
+                $status = array(
+                    'status_table_id' => $view,
+                    'status_table' => 'bill_of_materials_category',
+                    'status_code' => '1',
+                    'status_description' => 'Active'  
+                );
+
+                $status_id = $this->Status_Model->undo($status);
+
+                $history = array(
+                    'history_logs' => 'has restored bill of materials category',
+                    'history_details' =>
+                        "{".
+                        "bill_of_materials_category_id: " .
+                        '"'.
+                        $view.
+                        '"'.
+                        "}",
+                    'history_category' => 'bill_of_materials_category',
+                    'history_timestamp' => date('Y-m-d H:i:s'),
+                    'history_by' => '1',
+                );
+                
+                $history_id = $this->History_Model->insert($history);
+
+              $data = array(
+                    'message' => 'The bill of materials was successfully restored.',
+                    'type'    => 'success'
+                );
+                echo json_encode( $data ); exit();
+
+            }   
+        } 
     }
     public function bill_of_materials_category_form_data($id) 
     {   
@@ -5001,4 +5034,5 @@ class Maintenance extends CI_Controller {
         );
         return $data;
     }
+//////////////////////////
 }
